@@ -1,0 +1,51 @@
+/* 1. POSITIONNEMENT DU BLOC PRINCIPAL */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+    background-color: #ffffff; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* 2. STYLE DU PANNEAU (Ton bloc <main>) */
+.right-panel {
+    background-color: rgb(205, 255, 252); 
+    padding: 30px;
+    border-radius: 60px; /* Coins arrondis */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Petite ombre sympa */
+    margin-right: 100px; /* Décale un peu du bord droit de l'écran */
+    width: 500px; /* Largeur fixe pour que ce soit propre */
+}
+
+/* 3. STYLE DE LA LISTE (Pour aligner images et textes) */
+.categories-grid {
+    list-style: none ; /* Enlève les puces (points) de la liste */
+    padding: 0;
+}
+
+.cat-item {
+    margin-bottom: 15px; /* Espace entre chaque catégorie */
+}
+
+.cat-item a {
+    display: flex; /* Aligne l'image et le texte sur la même ligne */
+    align-items: center; /* Centre verticalement l'image par rapport au texte */
+    text-decoration: none; /* Enlève le soulignement des liens */
+    color: #333; /* Couleur du texte */
+    font-weight: bold;
+}
+
+.cat-item img {
+    margin-right: 15px; /* Espace entre l'image et le texte */
+    border-radius: 8px; /* Arrondi un peu les images */
+    object-fit: cover; /* Empêche l'image de se déformer */
+}
+
+/* Style rapide pour le formulaire de recherche */
+.search-form {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 20px;
+}
