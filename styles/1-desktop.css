@@ -1,1 +1,44 @@
 /*Code pour la Page 1 de vue article avec déscription*/
+
+/* 1. On nettoie les marges par défaut du navigateur */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Une police simple et lisible */
+}
+
+/* 2. La boîte principale de l'en-tête (le bandeau noir) */
+.entete-site {
+    background-color: #0b0d17; /* Bleu nuit très sombre (Thème Espace) */
+    padding: 15px 20px;        /* Espace intérieur (aère le contenu) */
+    border-bottom: 4px solid #d08c60; /* Petite bordure orange décorative en bas */
+}
+
+/* 3. Le conteneur Flexbox (c'est lui qui aligne l'image et le texte) */
+.bloc-logo {
+    display: flex;          /* CRUCIAL : Met les éléments côte à côte */
+    align-items: center;    /* Centre verticalement (le texte est au milieu de l'image) */
+    text-decoration: none;  /* Enlève le soulignement du lien */
+    width: fit-content;     /* La boîte s'adapte à la taille du contenu */
+}
+
+/* 4. Réglage de l'image (Ton GIF) */
+.logo-img {
+    height: 60px;           /* Hauteur fixe (la largeur s'adapte toute seule) */
+    width: auto;            /* Garde les proportions de l'image */
+    margin-right: 15px;     /* Ajoute un espace entre l'image et le texte */
+}
+
+/* 5. Réglage du texte "Quasar de Poche" */
+.nom-site {
+    color: #ffffff;         /* Texte en blanc pour le contraste sur fond noir */
+    font-size: 24px;        /* Taille du texte */
+    font-weight: bold;      /* Texte en gras */
+    text-transform: uppercase; /* Tout en MAJUSCULES (plus impactant) */
+    letter-spacing: 1px;    /* Espacement léger entre les lettres */
+}
+
+/* Petit bonus : Changement de couleur au survol de la souris */
+.bloc-logo:hover .nom-site {
+    color: #d08c60; /* Le texte devient orange quand on passe la souris dessus */
+    transition: color 0.3s; /* Transition douce */
+}
