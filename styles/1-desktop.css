@@ -8,17 +8,18 @@
     padding: 5px;
     font-size: medium;
     font-weight: bold;
-    font-family: "Noto Sans", sans-serif;
+    font-family: "Segoe UI", sans-serif;
 }
 
 
 body {
-    font-family: "Noto Sans", sans-serif;
-    font-weight: 400;
-    line-height: 1.6;
-    color: black;
-    margin: 0; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+* {
+    font-family: 'Segoe UI', sans-serif !important;
+}
+
 
 
 /*Barre principale en haut, header*/
@@ -139,7 +140,7 @@ body {
 .btn-filtre1 {
     text-decoration: none;
     padding: 8px 20px;
-    background-color:rgb(255, 97, 97);
+    background-color: #FF9F43;
     color: rgb(0, 0, 0);
     border: 3px solid rgb(37, 0, 117);
     border-radius: 3px;
@@ -152,8 +153,8 @@ body {
 .btn-filtre2 {
     text-decoration: none;
     padding: 8px 20px;
-    background-color: rgb(120, 255, 122);
-    color: black;
+    background-color: rgb(37, 0, 117);
+    color: white;
     font-weight: bold;
     border: 3px solid rgb(37, 0, 117);
     border-radius: 3px;
@@ -172,22 +173,22 @@ body {
     padding-bottom: 30px;
     padding-left: 25px; 
     padding-right: 25px;
-    background-color:aliceblue;
+    background-color:white;
     gap: 40px; 
 }
 
 /*Partie ventes*/
 .meilleures-ventes { 
     width: 65%;
-    border: 5px solid rgb(1, 136, 120);
+    background-color: white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
     padding: 10px;
     border-radius: 10px;
-    background-color: #e4fffb;
 }
 
 .meilleures-ventes h2 {
     font-family: 'Noto Sans', sans-serif; 
-    color: rgb(49, 7, 163);          
+    color: rgb(37, 0, 117);
     padding-bottom: 10px;
     margin-bottom: 10px;
     text-align: center;
@@ -200,6 +201,10 @@ body {
     flex-wrap: wrap;           
     margin-bottom: 30px;     
     align-items: center; 
+}
+
+.meilleures-ventes img {
+    border-radius: 5px;
 }
 
 .produit {
@@ -230,7 +235,7 @@ body {
     margin-bottom: 30px;
     text-decoration: none;
     padding: 8px 20px;
-    background-color: rgb(255, 115, 115);
+    background-color: #FF9F43;
     color: black;
     font-weight: bold;
     border: none;
@@ -244,16 +249,15 @@ body {
 /* Actualités */
 .actualites {
     width: 30%;
-    background-color: rgb(254, 255, 203); 
-    padding: 16px 20px;           
+    background-color: rgb(237, 243, 248);
+    padding: 20px 23px;           
     border-radius: 15px;     
     height: fit-content; 
-    border: 5px solid rgb(255, 203, 31); 
 }
 
 .actualites h2 {
     font-family: 'Noto Sans', sans-serif; 
-    color: rgb(49, 7, 163); 
+    color: rgb(37, 0, 117);
     border-bottom: 2px solid rgb(237, 107, 26); 
     padding-bottom: 10px;
     margin-bottom: 10px;
@@ -274,25 +278,28 @@ body {
     font-size: 16px;
     color: rgb(33, 25, 255);
     text-align: left;
-    margin: 0 0 5px 0;
+    margin: 0 0 0 0;
 }
 
 .news a {
-    text-decoration: none;
+    text-decoration: underline;
+    color: rgb(33, 25, 255);
 }
 
 .news p {
     font-size: 14px;
     color: rgb(0, 0, 0);
-    text-align: left;           
+    text-align: justify;           
 }
 
 .source {
     font-size: 15px;
     color: rgb(0, 0, 0);
-    margin-bottom: 5px;
+    margin-top: 2px;
+    margin-bottom: 4px;
     font-weight: bold;
-    text-align: left;           
+    text-align: left;  
+    font-style: italic;       
 }
 
 
@@ -319,7 +326,7 @@ body {
 
 .sections-visitees h2 {
     font-family: 'Noto Sans', sans-serif;
-    color: rgb(49, 7, 163);
+    color: rgb(37, 0, 117);
     margin-top: 0;
     margin-bottom: 15px;
     text-align: center;
@@ -369,7 +376,7 @@ body {
 
 .promotions h2 {
    font-family: 'Noto Sans', sans-serif;
-    color: rgb(17, 17, 17);
+    color: rgb(37, 0, 117);
     margin-top: 0;
     margin-bottom: 6px;
     text-align: center;
@@ -419,7 +426,7 @@ body {
 
 .immanquables h2 {
     font-family: 'Noto Sans', sans-serif;
-    color: rgb(49, 7, 163);
+    color: rgb(37, 0, 117);
     margin-top: 0;  
     margin-bottom: 10px;   
     padding-bottom: 5px;
@@ -449,7 +456,7 @@ body {
 }
 
 .petits-prix h2 {
-    color: rgb(49, 7, 163);
+    color: rgb(37, 0, 117);
     margin-top: 0;
     font-family: 'Noto Sans', sans-serif;
 }
