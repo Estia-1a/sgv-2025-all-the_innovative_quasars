@@ -95,6 +95,14 @@ body {
     font-size: 16px;       
 }
 
+.barre-outils {
+    display: flex;             
+    justify-content: space-between; 
+    align-items: center;        
+    padding: 10px 60px;         
+    background-color: white;    
+}
+
 /*Menu navigation*/
 .menu-principal {
     display: flex;            
@@ -103,10 +111,10 @@ body {
     font-family: "Noto Sans", sans-serif;
     font-weight: 600;      
     font-size: 16px; 
-    gap: 0px;      
-    padding: 1px;       
+    gap: 0px;             
     background-color: white;  
-    border-bottom: 1px solid rgb(254, 254, 254);
+    border: 3px solid rgb(37, 0, 117);
+    border-radius: 3px;
     cursor: pointer;
 }
 
@@ -116,8 +124,8 @@ body {
 	padding-bottom :8px;        
 	padding-left: 10px;
 	padding-right: 10px;
-    border-radius: 2px;
-    background-color:rgb(162, 235, 255);
+    border-radius:0px;
+    background-color:rgb(181, 220, 255);
     border: none;
     text-decoration: none;
     color: rgb(0, 0, 0);
@@ -125,6 +133,32 @@ body {
     font-weight: 600; 
     font-size: 16px;
 }
+
+/* Boutons filtres */
+.btn-filtre1 {
+    text-decoration: none;
+    padding: 8px 20px;
+    background-color:rgb(255, 97, 97);
+    color: rgb(0, 0, 0);
+    border: 3px solid rgb(37, 0, 117);
+    border-radius: 3px;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.btn-filtre2 {
+    text-decoration: none;
+    padding: 8px 20px;
+    background-color: rgb(120, 255, 122);
+    color: black;
+    font-weight: bold;
+    border: 3px solid rgb(37, 0, 117);
+    border-radius: 3px;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 16px;
+}
+
 
 /*Code CSS du bloc principal*/
 .bloc-principal {
@@ -145,7 +179,8 @@ body {
     padding-top: 10px;
     padding-bottom: 40px;
     padding-left: 25px; 
-    padding-right: 25px;    background-color:rgba(255, 255, 255, 0.927);
+    padding-right: 25px;   
+    background-color:rgba(255, 255, 255, 0.927);
 }
 
 .bloc-tertiaire {
