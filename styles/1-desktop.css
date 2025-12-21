@@ -372,7 +372,7 @@ body {
     color: rgb(17, 17, 17);
     margin-top: 0;
     margin-bottom: 6px;
-    text-align: center
+    text-align: center;
 }
 
 /* Les Boutons Promos */
@@ -490,15 +490,55 @@ body {
 
 .resume-quasar p {font-style: italic; text-align: justify;color:black;}
 
+/*Fin de page*/
 .fin-page {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 10px;
-    padding-bottom: 40px;
-    padding-left: 25px; 
-    padding-right: 25px;
-    background-color:rgb(112, 205, 255);
+    display: flex;            
+    justify-content: space-around; 
+    align-items: flex-start;   
+    padding: 10px 25px;      
+    background-color: white;
+    color: black;
+    font-family: "Noto Sans", sans-serif;
+}
+
+/* Par colonne */
+.colonne-footer {
+    display: flex;             
+    flex-direction: column;    
+    gap: 5px;                
+    width: 200px;          
+}
+
+.colonne-footer h3 {
+    margin-top: 0;           
+    margin-bottom: 10px;
+    font-family: 'Noto Serif', sans-serif;
+    font-size: 18px;
+    border-bottom: 2px solid black; 
+    padding-bottom: 5px;
+    display: inline-block;
+    width: fit-content;
+}
+
+.lien-fin {
+    text-decoration: none;     
+    color: black;             
+    font-family: "Noto Sans", sans-serif;
+    font-size: 14px;
+}
+
+.copyright {
+    text-align: center;       
+    background-color: rgb(37, 0, 117);
+    color: white;             
+    padding:5px;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 12px;
+    margin: 0;                 
+}
+
+.copyright p {
+    margin: 0;           
 }
 
 /*Taille des images sur le site*/
@@ -507,4 +547,4 @@ body {
 .boutons-user img {height: 50px; width: auto;}
 .bloc-principal img {height: 250px;width: auto;}
 .bloc-secondaire img {height: 80px; width: auto;}
-.bloc-tertiaire img {height: 250px; width:auto}
+.bloc-tertiaire img {height: 250px; width: auto;}
