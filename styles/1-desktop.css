@@ -1,5 +1,4 @@
 /*Code pour la Page 1 home*/
-
 /* 1. Barre annonce du moment */
 .top-bar {
     background-color: rgb(255, 235, 80);
@@ -16,9 +15,17 @@
     display: flex; /* aligne à l'horizontale les éléments de la div */
     justify-content: space-between; /* ecarte les éléments aux extrémités */
     align-items: center; /* aligne en verticale */
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 60px;
     padding-right: 60px;
-    background-color: rgb(226, 250, 255);
+    background-color: white;
 }
+
+/*Taille des images sur le site*/
+.logo img {height: 100px; width: auto;}
+.recherche img {height: 50px; width: auto;}
+.boutons-user img {height: 50px; width: auto;}
+.bloc-principal img {height: 250px;width: auto;}
+.bloc-secondaire img {height: 50px; width: auto;}
+.bloc-tertiaire img {height: 250px; width:auto}
