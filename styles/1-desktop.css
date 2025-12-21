@@ -168,7 +168,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding-top: 10px;
+    padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 25px; 
     padding-right: 25px;
@@ -300,8 +300,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 10px;
-    padding-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     padding-left: 25px; 
     padding-right: 25px;   
     background-color:rgba(255, 255, 255, 0.927);
@@ -399,20 +399,96 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding-top: 10px;
-    padding-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     padding-left: 25px; 
     padding-right: 25px;
-    background-color:rgba(255, 255, 255, 0.927);
+    background-color: aliceblue;
+    gap: 40px;
+}
+
+/*Immanquables*/
+.immanquables {
+    width: 65%;               
+    text-align: center;
+    border: 5px solid rgb(1, 136, 120);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #e4fffb;       
+}
+
+.immanquables h2 {
+    font-family: 'Noto Sans', sans-serif;
+    color: rgb(49, 7, 163);
+    margin-top: 0;  
+    margin-bottom: 10px;   
+    padding-bottom: 5px;
+}
+
+.affiches-immanquables {
+    display: flex;             
+    justify-content: space-around; 
+    flex-wrap: wrap;           
+    align-items: flex-end;    
+}
+
+.art-immanquables img {
+    height: 180px;             
+    width: auto;              
+    border-radius: 5px;       
+}
+
+/* Petits prix */
+.petits-prix {
+    width: 30%;              
+    text-align: center;       
+    background-color: rgb(249, 192, 192);
+    padding: 20px;
+    border: 5px dashed rgb(255, 14, 14); 
+    border-radius: 15px;
+}
+
+.petits-prix h2 {
+    color: rgb(49, 7, 163);
+    margin-top: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.btn-petits-prix {
+    display: block;         
+    text-decoration: none;
+
+    background-color: rgb(255, 244, 157); 
+    color: rgb(0, 0, 0);           
+    border: 5px solid rgb(0, 0, 0);
+    
+    padding: 15px 10px;
+    border-radius: 10px;     
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 800;      
+    font-size: 18px;  
+    margin-top: 15px;
+
+}
+
+.btn-petits-prix p {
+    margin: 0;
 }
 
 .resume-quasar {
-    padding-top: 10px;
+    padding-top:5px;
     padding-bottom: 10px;
     padding-left: 25px; 
     padding-right: 25px;
-    background-color:rgba(255, 255, 255, 0.927);
+    background-color:white;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 18px;
+    color: darkblue;
+    text-align: left;
+    font-weight: 400;
 }
+
+.resume-quasar p {font-style: italic; text-align: justify;color:black;}
 
 .fin-page {
     display: flex;
