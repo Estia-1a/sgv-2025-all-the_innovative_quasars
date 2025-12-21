@@ -1,1 +1,12 @@
-/*Code pour la Page 1 de vue article avec déscription*/
+/*Code pour la Page 1 home*/
+
+/* 1. Barre annonce du moment */
+.top-bar {
+    background-color: rgb(255, 235, 80);
+    color: black;
+    text-align: center;
+    padding: 5px;
+    font-size: medium;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
