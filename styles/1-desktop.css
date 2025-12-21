@@ -10,3 +10,15 @@
     font-weight: bold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+/*Barre principale en haut, header*/
+.header-main {
+    display: flex; /* aligne à l'horizontale les éléments de la div */
+    justify-content: space-between; /* ecarte les éléments aux extrémités */
+    align-items: center; /* aligne en verticale */
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: rgb(226, 250, 255);
+}
