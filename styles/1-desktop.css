@@ -30,7 +30,7 @@ body {
     padding-bottom: 10px;
     padding-left: 60px;
     padding-right: 60px;
-    background-color:rgba(255, 255, 255, 0.927);
+    background-color:white;
 }
 
 /*barre de recherche*/ 
@@ -38,12 +38,12 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    background-color: rgb(239, 232, 255);
+    background-color: white;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 15px;
     padding-right: 15px;
-    border: 3px solid rgb(104, 84, 194);
+    border: 5px solid rgb(37, 0, 117);
     border-radius: 20px;
 }
 
@@ -60,8 +60,8 @@ body {
     outline: none; /*enleve le trait bleu du link*/
     padding-top: 5px;
     padding-bottom: 5px;
-    font-size: 16px;
-    width: 500px; 
+    font-size: 20px;
+    width: 500px;
     background: transparent;
 }
 
@@ -75,6 +75,25 @@ body {
     justify-content: center;
 }
 
+/*Code pour la partie header, logo et boutons user*/
+/*Boutons users*/
+.boutons-user {
+    display: flex;        
+    align-items: center;   
+    gap: 30px;             
+}
+
+/* Le style de chaque lien (Le texte + l'icône) */
+.boutons-user a {
+    display: flex;         
+    align-items: center;   
+    gap: 12px;           
+    text-decoration: none; 
+    color: black;          
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 600;      
+    font-size: 16px;       
+}
 
 /*Code CSS du bloc principal*/
 .bloc-principal {
@@ -129,7 +148,7 @@ body {
 }
 
 /*Taille des images sur le site*/
-.logo img {height: 100px; width: auto;}
+.logo img {height: 100px; width: auto; display: block;}
 .recherche img {height: 40px; width: auto;}
 .boutons-user img {height: 50px; width: auto;}
 .bloc-principal img {height: 250px;width: auto;}
