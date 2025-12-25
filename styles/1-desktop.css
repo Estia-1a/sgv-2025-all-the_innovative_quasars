@@ -2,7 +2,7 @@
 
 /* 1. Barre annonce du moment */
 .top-bar {
-    background-color: rgb(255, 235, 80);
+    background-color: rgb(254, 247, 38);
     color: black;
     text-align: center;
     padding: 5px;
@@ -250,18 +250,20 @@ body {
 .actualites {
     width: 30%;
     background-color: aliceblue;
-    padding: 20px 23px;           
-    border-radius: 15px;     
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    padding: 10px;           
+    border-radius: 10px;
+    border: 2px dashed #FF9F43;
     height: fit-content; 
 }
 
 .actualites h2 {
     font-family: 'Noto Sans', sans-serif; 
     color: rgb(37, 0, 117);
-    border-bottom: 2px solid rgb(237, 107, 26); 
+    border-bottom: 2px solid #FF9F43; 
     padding-bottom: 10px;
     margin-bottom: 10px;
-    text-align: left;
+    text-align: center;
 }
 
 .liste-news {
@@ -368,10 +370,10 @@ body {
 
 /* Promos */
 .promotions {
-    width: 31%;      
+    width: 30%;      
     background-color: rgb(37, 0, 117);
     color: white;
-    padding: 15px;
+    padding: 10px;
     border: none;
     border-radius: 15px;      
     text-align: center;
@@ -397,7 +399,7 @@ body {
     font-size: 18px;
     padding: 5px;
     margin: 10px auto;
-    width: 70%;
+    width: 50%;
     border: none;
     border-radius: 8px;
 }
@@ -452,11 +454,11 @@ body {
 
 /* Petits prix */
 .petits-prix {
-    width: 31%;              
+    width: 30%;              
     text-align: center;       
     background-color: rgb(37, 0, 117);
     color: white;
-    padding: 15px;
+    padding: 10px;
     border: none;
     border-radius: 15px;
 }
@@ -482,7 +484,7 @@ body {
     font-weight: bold;      
     font-size: 18px;  
     margin: 10px auto;
-    width: 70%;
+    width: 60%;
 
 }
 
@@ -491,28 +493,39 @@ body {
 }
 
 .resume-quasar {
-    padding-top:5px;
+    padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 25px; 
     padding-right: 25px;
-    background-color:white;
+    background-color: #f5f5f5;
     font-family: "Noto Sans", sans-serif;
-    font-size: 18px;
-    color: darkblue;
-    text-align: left;
+    font-size: 16px;
+    color: rgb(37, 0, 117);
+    text-align: center;
     font-weight: 400;
+    margin: 40px 0;
 }
-
-.resume-quasar p {font-style: italic; text-align: justify;color:black;}
+.resume-quasar h2 {
+    text-align: center;
+    max-width: 800px;
+    margin: 5px auto;
+    color: rgb(37, 0, 117);
+}
+.resume-quasar p {
+    text-align: justify;
+    color: black;
+    max-width: 800px;
+    margin: 5px auto;
+}
 
 /*Fin de page*/
 .fin-page {
     display: flex;            
     justify-content: space-around; 
     align-items: flex-start;   
-    padding: 10px 25px;      
-    background-color: white;
-    color: black;
+    padding: 30px 25px;      
+    background-color: rgb(37, 0, 117);
+    color: white;
     font-family: "Noto Sans", sans-serif;
 }
 
@@ -529,7 +542,8 @@ body {
     margin-bottom: 10px;
     font-family: 'Noto Serif', sans-serif;
     font-size: 18px;
-    border-bottom: 2px solid black; 
+    color: white;
+    border-bottom: 2px solid white; 
     padding-bottom: 5px;
     display: inline-block;
     width: fit-content;
@@ -537,16 +551,16 @@ body {
 
 .lien-fin {
     text-decoration: none;     
-    color: black;             
+    color: white;             
     font-family: "Noto Sans", sans-serif;
     font-size: 14px;
 }
 
 .copyright {
     text-align: center;       
-    background-color: rgb(37, 0, 117);
+    background-color: rgb(20, 0, 60);
     color: white;             
-    padding:5px;
+    padding: 10px;
     font-family: "Noto Sans", sans-serif;
     font-size: 12px;
     margin: 0;                 
