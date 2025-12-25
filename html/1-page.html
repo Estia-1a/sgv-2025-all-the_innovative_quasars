@@ -5,8 +5,10 @@
 
 <head>
     <meta charset="UTF-8">  <!--Pour accepter les caractères spéciaux -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quasar de Poche</title>
     <link rel="stylesheet" href="../styles/1-desktop.css"> 
+    <link rel="stylesheet" href="../styles/1-mobile.css" media="screen and (max-width: 768px)">
     
 </head>
 	
@@ -14,16 +16,23 @@
 
 <header>
 
+<!--Menu navigation pour la version mobile-->
+<input type="checkbox" id="menu-toggle">
+
 <div class="top-bar">
 	    Livraison offerte dès 20€ d'achats ! 
 </div> 
 
 <div class="header-main">
-	    <div class="logo"> 
-            <a href="1-page.html" class="logo" aria-label="Retour à l'accueil">  
-                <img src="media/logoHOME.png" alt="Logo Quasar de Poche">
-            </a>
-	    </div>
+
+    <!--Menu navigation pour la version mobile-->
+<label for="menu-toggle" class="bouton-menu">☰</label>
+
+<div class="logo"> 
+    <a href="1-page.html" class="logo" aria-label="Retour à l'accueil">  
+    <img src="media/logoHOME.png" alt="Logo Quasar de Poche">
+    </a>
+</div>
     
     <!-- Barre de recherche -->
     <div class="recherche"> 

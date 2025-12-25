@@ -1,1 +1,40 @@
 /*Code pour la Page 1 Home*/
+
+/*faire disparaitre le symbole*/
+#menu-toggle {
+    display: none;
+}
+
+.bouton-menu {
+    display: block;
+    font-size: 35px;
+    cursor: pointer;
+    color: rgb(37, 0, 117);
+    margin-right: 15px;
+}
+
+/*cache le menu*/
+.barre-outils {
+    display: none; 
+}
+
+/*Si la case est cochée, on affiche la barre outils */
+#menu-toggle:checked ~ .barre-outils {
+    display: flex; 
+    flex-direction: column; 
+    width: 100%;
+}
+
+/* Style des liens*/
+.menu-principal {
+    flex-direction: column;
+    width: 100%;
+}
+
+.menu-principal a {
+    display: block;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    box-sizing: border-box; 
+}
