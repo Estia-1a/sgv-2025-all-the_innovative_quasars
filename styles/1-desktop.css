@@ -179,7 +179,7 @@ body {
 
 /*Partie ventes*/
 .meilleures-ventes { 
-    width: 65%;
+    width: 63%;
     background-color: white;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
     padding: 10px;
@@ -312,16 +312,18 @@ body {
     padding-left: 25px; 
     padding-right: 25px;   
     background-color:rgba(255, 255, 255, 0.927);
+    gap: 40px;
 }
 
 
 /*Sections visitées*/
 .sections-visitees {
     width: 63%;
-    border: 5px solid rgb(79, 50, 154);
+    border: none;
     padding: 10px;
     border-radius: 10px;
-    background-color: rgb(241, 238, 255); 
+    background-color: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 .sections-visitees h2 {
@@ -366,17 +368,18 @@ body {
 
 /* Promos */
 .promotions {
-    width: 30%;      
-    background-color: rgb(255, 229, 190);
-    padding: 12px;
-    border: 5px solid rgb(255, 55, 0);
+    width: 31%;      
+    background-color: rgb(37, 0, 117);
+    color: white;
+    padding: 15px;
+    border: none;
     border-radius: 15px;      
     text-align: center;    
 }
 
 .promotions h2 {
    font-family: 'Noto Sans', sans-serif;
-    color: rgb(37, 0, 117);
+    color: white;
     margin-top: 0;
     margin-bottom: 6px;
     text-align: center;
@@ -392,9 +395,9 @@ body {
     font-weight: bold;
     font-size: 18px;
     padding: 5px;
-    margin: 10px 0;          
-   
-    border: 5px solid rgb(0, 0, 0); 
+    margin: 10px auto;
+    width: 70%;
+    border: none;
     border-radius: 8px;
 }
 
@@ -416,12 +419,13 @@ body {
 
 /*Immanquables*/
 .immanquables {
-    width: 65%;               
+    width: 63%;               
     text-align: center;
-    border: 5px solid rgb(1, 136, 120);
+    border: none;
     padding: 10px;
     border-radius: 10px;
-    background-color: #e4fffb;       
+    background-color: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 .immanquables h2 {
@@ -449,14 +453,14 @@ body {
 .petits-prix {
     width: 30%;              
     text-align: center;       
-    background-color: rgb(249, 192, 192);
+    background-color: #FF9F43;
     padding: 20px;
-    border: 5px dashed rgb(255, 14, 14); 
+    border: none;
     border-radius: 15px;
 }
 
 .petits-prix h2 {
-    color: rgb(37, 0, 117);
+    color: black;
     margin-top: 0;
     font-family: 'Noto Sans', sans-serif;
 }
@@ -465,16 +469,17 @@ body {
     display: block;         
     text-decoration: none;
 
-    background-color: rgb(255, 244, 157); 
-    color: rgb(0, 0, 0);           
-    border: 5px solid rgb(0, 0, 0);
+    background-color: rgb(254, 247, 38); 
+    color: black;           
+    border: none;
     
     padding: 15px 10px;
     border-radius: 10px;     
     font-family: "Noto Sans", sans-serif;
-    font-weight: 800;      
+    font-weight: bold;      
     font-size: 18px;  
-    margin-top: 15px;
+    margin: 15px auto 0;
+    width: 70%;
 
 }
 
