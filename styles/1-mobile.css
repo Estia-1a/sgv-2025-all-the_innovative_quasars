@@ -38,3 +38,40 @@
     width: 100%;
     box-sizing: border-box; 
 }
+
+/*body du site*/
+
+.bloc-principal {
+    flex-direction: column; /*affiche les ventes au dessus d'actualités*/
+    padding: 10px;          
+    gap: 30px;
+}
+
+
+.meilleures-ventes, .actualites {width: 100%;}
+
+/*effet carrousel*/
+
+.affiches-ventes {
+    display: flex;          
+    flex-wrap: nowrap;      
+    overflow-x: auto;       /*SCROLL horizontal*/
+    gap: 20px;              /* espace entrelivres*/
+    padding-bottom: 15px;   /*barre de défilement*/
+}
+
+.produit {min-width: 180px; /*largeur minimale*/}
+.produit img {height: 150px; width: auto;}
+
+.decouvrir {
+    width: 100%;           
+    box-sizing: border-box; 
+    text-align: center;  
+    margin: 20px 0;
+}
+
+.actualites {
+    margin-top: 0;      
+    box-shadow: none;     
+    border: 1px solid #eee;
+}
