@@ -251,6 +251,17 @@
     </div>
 </footer>
 
+<script>
+
+// Norme WAI-ARIA
+const menuToggle = document.getElementById('menu-toggle');
+if (menuToggle) {
+    menuToggle.addEventListener('change', () => {
+        menuToggle.setAttribute('aria-expanded', menuToggle.checked ? 'true' : 'false');
+    });
+}
+</script>
+
 </body>
 
 </html>
