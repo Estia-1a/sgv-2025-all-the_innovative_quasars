@@ -2,13 +2,13 @@
 /*Header page*/
 
 /*Header*/
-
 .header-main {
     display: flex;
     flex-wrap: wrap;      
     align-items: center;
-    padding: 10px;
-    gap: 10px;           
+    padding: 5px;
+    gap: 10px;
+    box-sizing: border-box;
 }
 
 .bouton-menu {
@@ -25,21 +25,20 @@
 }
 
 .logo img {
-    height: 50px;         
+    height: 70px;         
     width: auto;
 }
 
-
 /*Boutons user*/
-
 .boutons-user {
     order: 3;             
     width: 100%;         
     display: flex;      
-    justify-content: center;
+    justify-content: space-around;
     gap: 30px;        
-    padding: 10px 0;      
-    border-top: 1px solid #f0f0f0; 
+    padding: 10px;      
+    background-color: aliceblue;
+    box-sizing: border-box;
 }
 
 .boutons-user a {
@@ -50,18 +49,17 @@
     text-decoration: none;
     color: black;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 14px;
     width: 100%;
 }
 
 .boutons-user img {
-    height: 25px;         
+    height: 40px;         
     width: auto;
     margin-left: 10px;
 }
 
 /*Recherche*/
-
 .recherche {
     order: 4;              /* Tout en bas */
     width: 100%;
@@ -83,7 +81,8 @@
 
 /*cache le menu*/
 .barre-outils {
-    display: none; 
+    display: none;
+    box-sizing: border-box;
 }
 
 /*Si la case est cochée, on affiche la barre outils */
@@ -101,17 +100,16 @@
 
 .menu-principal a {
     display: block;
-    padding: 15px;
+    padding: 10px;
     border-bottom: 1px solid #eee;
     width: 100%;
     box-sizing: border-box; 
 }
 
 /*Partie haute du site*/
-
 .header-main {
     flex-wrap: wrap;      
-    padding: 10px 15px;   
+    padding: 10px;   
     gap: 10px;          
 }
 
@@ -128,11 +126,11 @@
 
 .recherche input {
     width: 100%;          
-    font-size: 16px; 
+    font-size: 16px;
+    box-sizing: border-box;
 }
 
 /*Filtres*/
-
 .filtres {
     display: flex;       
     width: 100%;         
@@ -151,54 +149,88 @@
     white-space: nowrap; 
 }
 
-/*body du site*/
-
+/*Body du site*/
 .bloc-principal {
     flex-direction: column; /*affiche les ventes au dessus d'actualités*/
     padding: 10px;          
-    gap: 30px;
+    gap: 5px;
+    margin-top: 0;
 }
 
+.meilleures-ventes {
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 5px;
+    border-radius: 2px;
+    box-shadow: none;
+    box-sizing: border-box;
+    overflow: hidden;
+}
 
-.meilleures-ventes, .actualites {width: 100%;}
+.actualites {width: 100%; box-shadow: none;}
 
-/*effet carrousel*/
-
+/*Effet carrousel*/
 .affiches-ventes {
     display: flex;          
     flex-wrap: nowrap;      
     overflow-x: auto;       /*SCROLL horizontal*/
     gap: 20px;              /* espace entrelivres*/
-    padding-bottom: 15px;   /*barre de défilement*/
+    padding-bottom: 25px;   /*barre de défilement*/
+    margin: 0 -5px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
-.produit {min-width: 180px; /*largeur minimale*/}
-.produit img {height: 150px; width: auto;}
+.produit {
+    min-width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.produit a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 250px;
+    justify-content: flex-start;
+}
+.produit h3 {
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+.produit img {
+    height: 220px;
+    width: auto;
+    object-fit: contain;
+}
 
 .decouvrir {
     width: 100%;           
     box-sizing: border-box; 
     text-align: center;  
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 /*Actualités*/
 .actualites {
     width: 100%;          
     box-sizing: border-box; 
-    margin-top: 20px;    
-    padding: 15px;   
+    margin-top: 10px;    
+    padding: 10px;
+    border-radius: 2px;
 }
 
 .actualites h2 {font-size: 22px; }
 
 
-.liste-news {gap: 20px;}
+.liste-news {gap: 5px;}
 
 .news {
     /*séparer les news*/
     border-bottom: 1px solid rgba(0,0,0,0.1); 
-    padding-bottom: 15px;
+    padding-bottom: 8px;
     margin-bottom: 5px;
 }
 
@@ -223,17 +255,20 @@
 }
 
 /*Bloc secondaire*/
-
 .bloc-secondaire {
     flex-direction: column;  
-    padding: 20px 10px;        
-    gap: 30px;          
+    padding: 10px;        
+    gap: 20px;
+    background: none;
 }
 
-/*sections visitees*/
+/*Sections visitées*/
 .sections-visitees {
     width: 100%;              
-    box-sizing: border-box;   
+    box-sizing: border-box;
+    box-shadow: none;
+    background-color: #f5f5f5;
+    border-radius: 2px;
 }
 
 .liste-icones {
@@ -258,11 +293,12 @@
     font-size: 14px;   
 }
 
-/*promotions*/
+/*Promotions*/
 .promotions {
     width: 100%;     
     box-sizing: border-box; 
-    align-self: auto;  
+    align-self: auto;
+    border-radius: 2px;
 }
 
 .promotions h2 {font-size: 24px;}
@@ -278,14 +314,18 @@
 /*Bloc tertiaire */
 .bloc-tertiaire {
     flex-direction: column;    /* On empile tout verticalement */
-    padding: 20px 10px;        /* On réduit les marges */
-    gap: 30px;                 /* Espace entre les deux blocs */
+    padding: 10px;        /* On réduit les marges */
+    gap: 5px;                 /* Espace entre les deux blocs */
 }
 
 /*Immanquables*/
 .immanquables {
-    width: 100%;             
-    box-sizing: border-box;   
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: none;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 2px;
 }
 
 /*Carroussel*/
@@ -302,7 +342,7 @@
 .art-immanquables {flex: 0 0 auto;}
 
 .art-immanquables img {
-    height: 160px;         
+    height: 180px;         
     width: auto;          
 }
 
@@ -310,7 +350,8 @@
 .petits-prix {
     width: 100%;            
     box-sizing: border-box; 
-    margin-top: 0;     
+    margin-top: 10px;
+    border-radius: 2px;
 }
 
 .petits-prix h2 {font-size: 22px;}
@@ -319,13 +360,13 @@
     width: 80%;           
     padding: 12px 0;       
     font-size: 18px;     
-    margin: 15px auto;      
+    margin: 10px auto;      
 }
 
 /*Resume*/
 .resume-quasar {
     padding: 20px 15px;    
-    margin: 20px 0;    
+    margin: 10px 0;    
 }
 
 .resume-quasar h2 {
@@ -333,18 +374,17 @@
 }
 
 .resume-quasar p {
-    text-align: left;  
+    text-align: justify;  
     font-size: 14px;     
     line-height: 1.5; 
 }
 
 /*Fin de page*/
-
 .fin-page {
     flex-direction: column; 
     align-items: center;    
-    padding: 30px 15px;
-    gap: 40px;               
+    padding: 15px 10px;
+    gap: 20px;               
     text-align: center;   
 }
 
@@ -352,7 +392,7 @@
     width: 100%;             
     align-items: center;       
     border-bottom: 1px solid rgba(255,255,255,0.1); 
-    padding-bottom: 20px;   
+    padding-bottom: 10px;   
 }
 
 .colonne-footer:last-child {
@@ -362,12 +402,12 @@
 
 .colonne-footer h3 {
     font-size: 20px;        
-    margin-bottom: 15px;
+    margin-bottom: 0px;
 }
 
 .lien-fin {
     display: block;            
-    padding: 8px 0;           
+    padding: 1px 0;           
     font-size: 16px;           
     width: 100%;           
 }
