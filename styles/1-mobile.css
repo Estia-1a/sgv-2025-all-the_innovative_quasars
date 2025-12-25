@@ -153,3 +153,39 @@
     display: block;   
     padding: 5px 0;  
 }
+
+/*Bloc secondaire*/
+
+.bloc-secondaire {
+    flex-direction: column;  
+    padding: 20px 10px;        
+    gap: 30px;          
+}
+
+/*sections visitees*/
+.sections-visitees {
+    width: 100%;              
+    box-sizing: border-box;   
+}
+
+.liste-icones {
+    justify-content: space-around;
+    padding-bottom: 5px;
+}
+
+.lien-section {
+    width: auto;           
+    flex: 1;              
+    max-width: 100px;    
+}
+
+
+.sections-visitees img {   
+    height: 60px;           
+    width: auto;          
+    margin-bottom: 5px;
+}
+
+.lien-section p {
+    font-size: 14px;   
+}
