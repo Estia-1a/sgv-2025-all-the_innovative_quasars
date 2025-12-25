@@ -206,3 +206,34 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+/*Bloc tertiaire */
+.bloc-tertiaire {
+    flex-direction: column;    /* On empile tout verticalement */
+    padding: 20px 10px;        /* On réduit les marges */
+    gap: 30px;                 /* Espace entre les deux blocs */
+}
+
+/*Immanquables*/
+.immanquables {
+    width: 100%;             
+    box-sizing: border-box;   
+}
+
+/*Carroussel*/
+.affiches-immanquables {
+    display: flex;             
+    flex-wrap: nowrap;    
+    overflow-x: auto;         
+    justify-content: flex-start; 
+    gap: 15px;               
+    padding-bottom: 15px;    
+}
+
+/*Livres*/
+.art-immanquables {flex: 0 0 auto;}
+
+.art-immanquables img {
+    height: 160px;         
+    width: auto;          
+}
