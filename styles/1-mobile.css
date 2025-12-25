@@ -39,6 +39,50 @@
     box-sizing: border-box; 
 }
 
+/*Partie haute du site*/
+
+.header-main {
+    flex-wrap: wrap;      
+    padding: 10px 15px;   
+    gap: 10px;          
+}
+
+.recherche {
+    order: 3;              /*DERNIÈRE position*/
+    width: 100%;          
+    margin-top: 5px;       
+    box-sizing: border-box; 
+    padding: 5px 10px;      
+    border-width: 3px;  
+}
+
+.recherche form {width: 100%;}
+
+.recherche input {
+    width: 100%;          
+    font-size: 16px; 
+}
+
+/*Filtres*/
+
+.filtres {
+    display: flex;       
+    width: 100%;         
+    padding: 15px 10px;    
+    gap: 10px;            
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+
+.btn-filtre1,.btn-filtre2 {
+    flex: 1;               
+    text-align: center;    
+    padding: 10px 5px;    
+    font-size: 13px;      
+    white-space: nowrap; 
+}
+
 /*body du site*/
 
 .bloc-principal {
