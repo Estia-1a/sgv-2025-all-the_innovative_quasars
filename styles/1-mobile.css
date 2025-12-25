@@ -13,6 +13,12 @@ h1 {
     border: 0;
 }
 
+h2 {
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
 /*Header*/
 .header-main {
     display: flex;
@@ -234,7 +240,8 @@ h1 {
     border-radius: 2px;
 }
 
-.actualites h2 {font-size: 22px; }
+.actualites h2 {font-size: 20px; }
+.actualites h2 {font-size: 20px; font-weight: 700; }
 
 
 .liste-news {gap: 5px;}
@@ -313,7 +320,7 @@ h1 {
     border-radius: 2px;
 }
 
-.promotions h2 {font-size: 24px;}
+.promotions h2 {font-size: 20px; font-weight: 700;}
 
 .btn-promo {
     width: 80%;           
@@ -366,7 +373,7 @@ h1 {
     border-radius: 2px;
 }
 
-.petits-prix h2 {font-size: 22px;}
+.petits-prix h2 {font-size: 20px; font-weight: 700;}
 
 .btn-petits-prix {
     width: 80%;           
@@ -382,7 +389,13 @@ h1 {
 }
 
 .resume-quasar h2 {
-    font-size: 22px;     
+    font-size: 20px;
+    font-weight: 700;    
+}
+
+.sections-visitees h2 {
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .resume-quasar p {
