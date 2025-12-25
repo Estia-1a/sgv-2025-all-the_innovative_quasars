@@ -17,7 +17,7 @@
 <header>
 
 <!--Menu navigation pour la version mobile-->
-<input type="checkbox" id="menu-toggle">
+<input type="checkbox" id="menu-toggle" aria-controls="menu-principal" aria-expanded="false">
 
 <div class="top-bar">
 	    Livraison offerte dès 20€ d'achats ! 
@@ -36,8 +36,8 @@
     
     <!-- Barre de recherche -->
     <div class="recherche"> 
-		<form action="1-page.html" method="get" role="search">
-        <input type="text" placeholder="Rechercher...">
+        <form action="1-page.html" method="get" role="search">
+        <input type="text" placeholder="Rechercher..." aria-label="Recherche">
             
 		<button type="submit">
         <img src="media/loupe.png" alt="Lancer la recherche">
@@ -60,7 +60,7 @@
 
 <div class="barre-outils">
 <!--Menu categories produits-->
-<nav class="menu-principal">
+<nav class="menu-principal" id="menu-principal">
             <a href="1-page.html">Accueil</a>
             <a href="2-page.html">L'Univers</a>
             <a href="2-page.html">Système Solaire</a>
@@ -81,6 +81,7 @@
 </header>
 
 <main>
+<h1>Quasar de poche : l'astrophysique à portée de main, pour grands et petits !</h1>
 <!--Partie principale de la home-->
 <div class="bloc-principal">
 
@@ -91,21 +92,21 @@
                 
                 <article class="produit">
                     <a href="2-page.html">
-                        <img src="media/livre1.png" alt="Livre 1">
+                        <img src="media/livre1.png" alt="Observer le ciel - Guide pratique d'observation astronomique">
 						<h3>Observer le ciel</h3>
                     </a>
                 </article>
                 
                 <article class="produit">
                     <a href="2-page.html">
-                        <img src="media/livre2.png" alt="Livre 2">
+                        <img src="media/livre2.png" alt="Voyage au cœur des trous noirs - Exploration scientifique">
 						<h3>Voyage au coeur des trous noirs</h3>
                     </a>
                 </article>
                 
                 <article class="produit">
                     <a href="2-page.html">
-                        <img src="media/livre3.png" alt="Livre 3">
+                        <img src="media/livre3.png" alt="Dis, pourquoi les étoiles brillent ? - Livre jeunesse astronomie">
 						<h3>Dis, pourquoi les étoiles brillent?</h3>
                     </a>
                 </article>
@@ -185,19 +186,19 @@
       
         <div class="affiches-immanquables">
             <a href="1-page.html" class="art-immanquables">  
-                <img src="media/livre4.png" alt="Article-1"> 
+                <img src="media/livre4.png" alt="Exoplanètes - Vulgarisation scientifique sur les zones habitables"> 
             </a>
 
             <a href="1-page.html" class="art-immanquables">  
-                <img src="media/livre5.png" alt="Article-2"> 
+                <img src="media/livre5.png" alt="Le Soleil : Mystères et secrets de notre étoile - Vulgarisation scientifique sur le système solaire"> 
             </a>
 
             <a href="1-page.html" class="art-immanquables">  
-                <img src="media/livre6.png" alt="Article-3"> 
+                <img src="media/livre6.png" alt="Les étoiles du Père Noël - Livre pour enfants sur les étoiles"> 
             </a>
 
             <a href="1-page.html" class="art-immanquables">  
-                <img src="media/livre7.png" alt="Article-4"> 
+                <img src="media/livre7.png" alt="Univers : Sommes-nous seuls ? - Bande dessinée jeunesse sur les extraterrestres"> 
             </a>
         </div>
     </section> 
