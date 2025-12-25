@@ -365,7 +365,7 @@
 
 /*Resume*/
 .resume-quasar {
-    padding: 20px 15px;    
+    padding: 20px 30px;    
     margin: 10px 0;    
 }
 
@@ -383,8 +383,8 @@
 .fin-page {
     flex-direction: column; 
     align-items: center;    
-    padding: 15px 10px;
-    gap: 20px;               
+    padding: 30px 15px;
+    gap: 40px;               
     text-align: center;   
 }
 
