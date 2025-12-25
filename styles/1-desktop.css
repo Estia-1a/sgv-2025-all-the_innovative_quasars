@@ -15,6 +15,15 @@
     font-family: 'Segoe UI', sans-serif !important;
 }
 
+/* Cacher le menu burger sur desktop */
+#menu-toggle {
+    display: none;
+}
+
+.bouton-menu {
+    display: none;
+}
+
 /*Barre principale en haut, header*/
 .header-main {
     display: flex; /* aligne à l'horizontale les éléments de la div */
