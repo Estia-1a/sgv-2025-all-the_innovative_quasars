@@ -1,4 +1,72 @@
 /*Code pour la Page 1 Home*/
+/*Header page*/
+
+/*Header*/
+
+.header-main {
+    display: flex;
+    flex-wrap: wrap;      
+    align-items: center;
+    padding: 10px;
+    gap: 10px;           
+}
+
+.bouton-menu {
+    order: 1;
+    flex: 0 0 auto;
+    margin-right: auto;  
+}
+
+/*Logo*/
+.logo {
+    order: 2;
+    flex: 1;            
+    text-align: center;   
+}
+
+.logo img {
+    height: 50px;         
+    width: auto;
+}
+
+
+/*Boutons user*/
+
+.boutons-user {
+    order: 3;             
+    width: 100%;         
+    display: flex;      
+    justify-content: center;
+    gap: 30px;        
+    padding: 10px 0;      
+    border-top: 1px solid #f0f0f0; 
+}
+
+.boutons-user a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 12px;
+    width: 100%;
+}
+
+.boutons-user img {
+    height: 25px;         
+    width: auto;
+    margin-left: 10px;
+}
+
+/*Recherche*/
+
+.recherche {
+    order: 4;              /* Tout en bas */
+    width: 100%;
+    margin-top: 0;
+}
 
 /*faire disparaitre le symbole*/
 #menu-toggle {
