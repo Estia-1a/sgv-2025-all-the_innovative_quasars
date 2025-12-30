@@ -4,10 +4,16 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">  <!--Pour accepter les caractères spéciaux -->
+    <!-- Encodage des caractères pour supporter les accents -->
+    <meta charset="UTF-8">
+    <!-- Configuration pour l'affichage sur mobile (responsive) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Description pour le référencement (SEO) -->
+    <meta name="description" content="Quasar de Poche : Votre librairie en ligne spécialisée en astrophysique et astronomie. Livres, ebooks et guides pour tous les passionnés de l'espace.">
     <title>Quasar de Poche</title>
+    <!-- Lien vers la feuille de style pour ordinateur -->
     <link rel="stylesheet" href="styles/index-desktop.css"> 
+    <!-- Lien vers la feuille de style pour mobile (écran max 768px) -->
     <link rel="stylesheet" href="styles/index-mobile.css" media="screen and (max-width: 768px)">
     
 </head>
@@ -16,18 +22,20 @@
 
 <header>
 
-<!--Menu navigation pour la version mobile-->
+<!-- Checkbox cachée pour gérer l'ouverture/fermeture du menu mobile -->
 <input type="checkbox" id="menu-toggle" role="button" aria-controls="menu-principal" aria-pressed="true">
 
+<!-- Barre d'information tout en haut -->
 <div class="top-bar">
 	    Livraison offerte dès 20€ d'achats ! 
 </div> 
 
 <div class="header-main">
 
-    <!--Menu navigation pour la version mobile-->
+    <!-- Bouton burger pour le menu mobile (lié au checkbox) -->
 <label for="menu-toggle" class="bouton-menu">☰</label>
 
+<!-- Logo du site -->
 <div class="logo"> 
     <a href="index.html" class="logo" aria-label="Retour à l'accueil">  
     <img src="media/logoHOME.png" alt="Logo Quasar de Poche">
@@ -45,13 +53,13 @@
 		</form>
     </div>
 
-    <!--Outils à droite, boutons utilisateur-->
+    <!-- Boutons utilisateur (Compte et Panier) -->
     <div class="boutons-user"> 
             <a href="index.html">
 			Mon compte
             <img src="media/moncompte.png" alt="Icône utilisateur sur mon compte"> 
 			</a> 
-            <a href="2-page.html">
+            <a href="panier.html">
 			Mon panier
             <img src="media/monpanier.png" alt="Icône panier sur mon compte">
 			</a> 
@@ -59,30 +67,32 @@
 </div>
 
 <div class="barre-outils">
-<!--Menu categories produits-->
+<!-- Menu de navigation principal -->
 <nav class="menu-principal" id="menu-principal">
             <a href="index.html">Accueil</a>
-            <a href="2-page.html">L'Univers</a>
-            <a href="2-page.html">Système Solaire</a>
-            <a href="2-page.html">Étoiles</a>
-            <a href="2-page.html">Planètes</a>
-            <a href="2-page.html">Observation</a>
-            <a href="2-page.html">Jeunesse</a>
-            <a href="2-page.html">Idées Cadeaux</a>
+            <a href="index.html">L'Univers</a>
+            <a href="index.html">Système Solaire</a>
+            <a href="index.html">Étoiles</a>
+            <a href="index.html">Planètes</a>
+            <a href="index.html">Observation</a>
+            <a href="index.html">Jeunesse</a>
+            <a href="index.html">Idées Cadeaux</a>
 </nav>
-<!--Boutons filtres tout voir, e-books,format papier-->
+<!-- Boutons de filtres rapides -->
 <div class="filtres">
-        <a href="2-page.html" class="btn-filtre1">Tout voir</a>
-        <a href="2-page.html" class="btn-filtre2">E-Books</a>
-        <a href="2-page.html" class="btn-filtre2">Format papier</a>
+        <a href="index.html" class="btn-filtre1">Tout voir</a>
+        <a href="index.html" class="btn-filtre2">E-Books</a>
+        <a href="index.html" class="btn-filtre2">Format papier</a>
     </div>
 
 </div>
 </header>
 
 <main>
+<!-- Titre principal de la page (h1 unique pour le SEO) -->
 <h1>Quasar de poche : l'astrophysique à portée de main, pour grands et petits !</h1>
-<!--Partie principale de la home-->
+
+<!-- Partie principale : Meilleures ventes et Actualités -->
 <div class="bloc-principal">
 
         <section class="meilleures-ventes">
@@ -90,46 +100,52 @@
             
             <div class="affiches-ventes">
                 
+                <!-- Article produit 1 -->
                 <article class="produit">
-                    <a href="2-page.html">
+                    <a href="index.html">
                         <img src="media/livre1.png" alt="Observer le ciel - Guide pratique d'observation astronomique">
 						<h3>Observer le ciel</h3>
                     </a>
                 </article>
                 
+                <!-- Article produit 2 -->
                 <article class="produit">
-                    <a href="2-page.html">
+                    <a href="index.html">
                         <img src="media/livre2.png" alt="Voyage au cœur des trous noirs - Exploration scientifique">
 						<h3>Voyage au cœur des trous noirs</h3>
                     </a>
                 </article>
                 
+                <!-- Article produit 3 -->
                 <article class="produit">
-                    <a href="2-page.html">
+                    <a href="index.html">
                         <img src="media/livre3.png" alt="Dis, pourquoi les étoiles brillent ? - Livre jeunesse astronomie">
 						<h3>Dis, pourquoi les étoiles brillent?</h3>
                     </a>
                 </article>
             </div> 
-			<a href="2-page.html" class="decouvrir">Découvrir tous les produits</a>
+			<a href="index.html" class="decouvrir">Découvrir tous les produits</a>
         </section>
 
         <section class="actualites">
             <h2>Astro News de la semaine !</h2>
             
 			<div class="liste-news">
+            <!-- Actualité 1 -->
             <article class="news">
                 <a href="index.html"><h3>Découverte d'une exoplanète</h3></a>
                 <p class="source">Source : NASA</p>
                 <p>Une nouvelle planète située en dehors de notre système solaire a été découverte par la NASA. Elle attire l’attention des scientifiques car elle pourrait posséder des conditions proches de celles de la Terre...</p>
             </article>
 
+            <!-- Actualité 2 -->
             <article class="news">
                 <a href="index.html"><h3>Pluie d'étoiles filantes</h3></a>
                 <p class="source">Source : Science & Vie</p>
                 <p>Une pluie d’étoiles filantes illuminera le ciel ce week-end. Un spectacle naturel à ne pas manquer pour les amateurs d’astronomie!</p>
             </article>
 
+            <!-- Actualité 3 -->
             <article class="news">
                 <a href="index.html"><h3>Le Soleil se réveille</h3></a>
                 <p class="source">Source : ESA</p>
@@ -139,7 +155,7 @@
         </section>
 </div>
 
-<!--Partie secondaire de la home-->
+<!-- Partie secondaire : Sections visitées et Promotions -->
 <div class="bloc-secondaire"> 
 
     <section class="sections-visitees">
@@ -147,17 +163,17 @@
      
         <div class="liste-icones">
 
-            <a href="2-page.html" class="lien-section">  
+            <a href="index.html" class="lien-section">  
                 <img src="media/trou-noir.png" alt="Section Trous Noirs"> 
                 <p>Trous Noirs</p>
             </a>
          
-            <a href="2-page.html" class="lien-section">  
+            <a href="index.html" class="lien-section">  
                 <img src="media/planete.png" alt="Section Exoplanètes"> 
                 <p>Exoplanètes</p>
             </a>
          
-            <a href="2-page.html" class="lien-section">  
+            <a href="index.html" class="lien-section">  
                 <img src="media/lune.png" alt="Section Lune"> 
                 <p>La Lune</p>
             </a>
@@ -165,20 +181,20 @@
         </div> 
 		</section>
 
-<!--Coin promotions-->   
+<!-- Encart promotions -->   
     <aside class="promotions"> 
         <h2>Promotions !</h2>
 
-            <a href="2-page.html" class="btn-promo">
+            <a href="index.html" class="btn-promo">
 			<span>-30% Jeunesse</span> 
 			</a>
-            <a href="2-page.html" class="btn-promo">
+            <a href="index.html" class="btn-promo">
 			<span>-50% Ebooks</span>
 			</a>
     </aside>
 </div>
 
-<!--Fin de la page home-->
+<!-- Partie tertiaire : Immanquables et Petits prix -->
 <div class="bloc-tertiaire"> 
 
     <section class="immanquables">
@@ -206,7 +222,7 @@
     <aside class="petits-prix">
         <h2>Petits prix !</h2>
 
-        <a href="2-page.html" class="btn-petits-prix">
+        <a href="index.html" class="btn-petits-prix">
         <span>Format poche à 2 euros !</span>
         </a>
     </aside> 
@@ -214,14 +230,16 @@
 </div>
 </main>
 
-<!--Bas de page générique-->
+<!-- Pied de page (Footer) -->
 <footer> 
 
+    <!-- Résumé de l'entreprise -->
     <div class="resume-quasar">
         <h2>Qui sommes-nous ?</h2>
         <p>Né en 2021 de la passion commune de deux jeunes diplômés en physique, Quasar de Poche a une mission simple : mettre l'univers à la portée de tous. Convaincus que l'astrophysique doit émerveiller aussi bien les petits curieux que les grands rêveurs, nous avons sélectionné pour vous les meilleurs ouvrages, numériques et papiers. Considérez cette boutique comme votre rampe de lancement : vous trouverez ici toutes les clés pour réussir votre propre quête des étoiles.</p>
     </div>
 
+    <!-- Liens du footer -->
     <div class="fin-page">
 
         <div class="colonne-footer">
@@ -246,6 +264,7 @@
         </div>
     </div>
 
+    <!-- Copyright -->
     <div class="copyright">
         <p>Copyright 2025 Quasar de Poche</p>
     </div>
@@ -253,10 +272,11 @@
 
 <script>
 
-// Norme WAI-ARIA
+// Script pour gérer l'accessibilité du menu mobile (WAI-ARIA)
 const menuToggle = document.getElementById('menu-toggle');
 if (menuToggle) {
     menuToggle.addEventListener('change', () => {
+        // Met à jour l'attribut aria-expanded pour les lecteurs d'écran
         menuToggle.setAttribute('aria-expanded', menuToggle.checked ? 'true' : 'false');
     });
 }

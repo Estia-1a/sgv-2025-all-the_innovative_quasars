@@ -1,0 +1,313 @@
+/* ==========================================================================
+   FEUILLE DE STYLE MOBILE - PAGE PANIER
+   Ce fichier gère l'affichage du panier pour les petits écrans
+   ========================================================================== */
+
+/* --- Titres --- */
+.fil-ariane {
+    padding: 10px;
+    font-size: 12px;
+    color: #555;
+    background-color: white;
+}
+
+.fil-ariane a {
+    text-decoration: underline;
+    color: rgb(37, 0, 117);
+    font-weight: bold;
+}
+
+.fil-ariane .page-active {
+    color: rgb(37, 0, 117);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: rgb(37, 0, 117);
+    margin: 10px 0;
+}
+
+h2 {
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/* --- En-tête principal (Header) --- */
+.header-main {
+    display: flex;
+    flex-wrap: wrap;      
+    align-items: center;
+    padding: 5px;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.bouton-menu {
+    order: 1;
+    flex: 0 0 auto;
+    margin-right: auto;  
+}
+
+.logo {
+    order: 2;
+    flex: 1;            
+    text-align: center;   
+}
+
+.logo img {
+    height: 70px;         
+    width: auto;
+}
+
+.boutons-user {
+    order: 3;             
+    width: 100%;         
+    display: flex;      
+    justify-content: space-around;
+    gap: 30px;        
+    padding: 10px;      
+    background-color: aliceblue;
+    box-sizing: border-box;
+}
+
+.boutons-user a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    width: 100%;
+}
+
+.boutons-user img {
+    height: 40px;         
+    width: auto;
+    margin-left: 10px;
+}
+
+/* --- Barre de recherche --- */
+.recherche {
+    order: 4;              /* Tout en bas */
+    width: 100%;
+    margin-top: 0;
+}
+
+/* --- Menu Burger --- */
+#menu-toggle {
+    display: none;
+}
+
+.bouton-menu {
+    display: block;
+    font-size: 35px;
+    cursor: pointer;
+    color: rgb(37, 0, 117);
+    margin-right: 15px;
+}
+
+/* Menu caché par défaut */
+.menu-principal {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    border-top: 1px solid #ccc;
+}
+
+/* Affichage du menu quand coché */
+#menu-toggle:checked ~ .header-main + .barre-outils .menu-principal {
+    display: flex;
+}
+
+.menu-principal a {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.barre-outils {
+    display: block;
+    padding: 0;
+}
+
+.filtres {
+    display: none; /* On cache les filtres sur mobile si besoin, ou on les adapte */
+}
+
+/* --- Styles spécifiques au panier mobile --- */
+.bloc-principal {
+    padding: 10px;
+}
+
+.panier-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.panier-gauche, .panier-droite {
+    width: 100%;
+}
+
+.panier-container {
+    width: 100%;
+}
+
+/* Transformer le tableau en cartes pour mobile */
+.panier-table, .panier-table tbody, .panier-table tr, .panier-table td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.panier-table thead {
+    display: none;
+}
+
+.panier-table tr {
+    margin-bottom: 15px;
+    border: none;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border-radius: 5px;
+}
+
+.panier-table td {
+    text-align: left;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panier-table td:last-child {
+    border-bottom: none;
+    justify-content: center;
+}
+
+.produit-info {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    padding-left: 0 !important;
+    display: flex;
+    width: 100%;
+}
+
+.produit-info img {
+    width: 60px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.info-text {
+    text-align: left;
+}
+
+/* Actions Panier */
+.actions-panier {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.actions-droite {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.btn-continuer, .btn-vider, .btn-maj {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: none;
+    border-radius: 5px;
+}
+
+.btn-continuer {
+    background-color: #FF9F43;
+    border: none;
+    color: black;
+}
+
+.btn-vider, .btn-maj {
+    background-color: white;
+    border: 2px solid rgb(37, 0, 117);
+    color: rgb(37, 0, 117);
+}
+
+/* Codes Promo */
+.codes-container {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.bloc-code {
+    border: 2px solid rgb(37, 0, 117);
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+/* Résumé */
+.resume-box {
+    border: none;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border-radius: 5px;
+    background-color: white;
+}
+
+.total-final {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(37, 0, 117);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-payer {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    background-color: #FF9F43;
+    border: none;
+    color: black;
+    box-shadow: none;
+    border-radius: 5px;
+}
+
+/* --- Pied de page (Footer) --- */
+.fin-page {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.colonne-footer {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.resume-quasar {
+    padding: 15px;
+}

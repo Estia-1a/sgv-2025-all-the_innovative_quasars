@@ -1,0 +1,559 @@
+/* ==========================================================================
+   FEUILLE DE STYLE DESKTOP - PAGE PANIER
+   Ce fichier gère l'affichage du panier pour les écrans larges
+   ========================================================================== */
+
+/* --- Configuration globale --- */
+* {
+    font-family: 'Segoe UI', sans-serif !important;
+}
+
+/* --- Barre d'annonce supérieure --- */
+.top-bar {
+    background-color: rgb(254, 247, 38);
+    color: black;
+    text-align: center;
+    padding: 5px;
+    font-size: medium;
+    font-weight: bold;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* --- Titres --- */
+.fil-ariane {
+    padding: 10px 60px;
+    font-size: 14px;
+    color: #555;
+    background-color: white;
+}
+
+.fil-ariane a {
+    text-decoration: underline;
+    color: rgb(37, 0, 117);
+    font-weight: bold;
+}
+
+.fil-ariane .page-active {
+    color: rgb(37, 0, 117);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+    font-style: italic;
+    color: rgb(37, 0, 117);
+    margin: 20px 0;
+    font-size: 24px;
+}
+
+/* --- Éléments masqués sur Desktop --- */
+#menu-toggle {
+    display: none;
+}
+
+.bouton-menu {
+    display: none;
+}
+
+/* --- En-tête principal (Header) --- */
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+    background-color: white;
+}
+
+/* --- Barre de recherche --- */
+.recherche {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    padding: 10px 15px;
+    border: 5px solid rgb(37, 0, 117);
+    border-radius: 20px;
+}
+
+.recherche form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.recherche input {
+    border: none;      
+    outline: none;
+    padding: 5px 0;
+    font-size: 20px;
+    width: 500px;
+    background: transparent;
+}
+
+.recherche button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --- Zone Utilisateur --- */
+.boutons-user {
+    display: flex;        
+    align-items: center;   
+    gap: 30px;             
+}
+
+.boutons-user a {
+    display: flex;         
+    align-items: center;   
+    gap: 12px;           
+    text-decoration: none; 
+    color: black;          
+    font-weight: 600;      
+    font-size: 16px;       
+}
+
+/* --- Barre d'outils et Navigation --- */
+.barre-outils {
+    display: flex;             
+    justify-content: space-between; 
+    align-items: center;        
+    padding: 10px 25px;         
+    background-color: white;    
+}
+
+.menu-principal {
+    display: flex;            
+    justify-content: flex-start;
+    flex-wrap: wrap; 
+    font-weight: 600;      
+    font-size: 16px; 
+    gap: 0px;             
+    background-color: white;  
+    border: 3px solid rgb(37, 0, 117);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.menu-principal a {
+    display: inline-block;
+    padding: 8px 10px;
+    border-radius: 0px;
+    background-color: rgb(181, 220, 255);
+    border: none;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 600; 
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* --- Boutons Filtres --- */
+.btn-filtre1 {
+    text-decoration: none;
+    padding: 8px 20px;
+    background-color: #FF9F43;
+    color: rgb(0, 0, 0);
+    border: 3px solid rgb(37, 0, 117);
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-filtre2 {
+    text-decoration: none;
+    padding: 8px 20px;
+    background-color: rgb(37, 0, 117);
+    color: white;
+    font-weight: bold;
+    border: 3px solid rgb(37, 0, 117);
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* --- Mise en page principale (Layout) --- */
+.bloc-principal {
+    padding: 20px 60px;
+    background-color: white;
+}
+
+.panier-layout {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.panier-gauche {
+    flex: 2;
+}
+
+.panier-droite {
+    flex: 1;
+}
+
+/* --- Styles spécifiques au panier (Gauche) --- */
+.panier-container {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Tableau du panier */
+.panier-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    overflow: hidden; /* Pour les coins arrondis */
+}
+
+.panier-table th, .panier-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.panier-table th {
+    background-color: rgb(37, 0, 117);
+    color: white;
+    font-weight: bold;
+    border-bottom: none;
+}
+
+/* Informations produit */
+.produit-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.produit-info img {
+    width: 80px;
+    height: auto;
+    border: none;
+    border-radius: 5px;
+    padding: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.info-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.titre-produit {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: rgb(37, 0, 117);
+}
+
+.detail-produit {
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Bouton supprimer */
+.btn-supprimer {
+    background-color: white;
+    color: rgb(37, 0, 117);
+    border: 2px solid rgb(37, 0, 117);
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+.btn-supprimer:hover {
+    /* background-color: rgb(37, 0, 117); removed */
+    /* color: white; removed */
+}
+
+.btn-supprimer:active {
+    /* transform: scale(0.98); removed */
+}
+
+/* Actions Panier (Boutons sous le tableau) */
+.actions-panier {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.actions-droite {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-continuer {
+    background-color: #FF9F43;
+    color: black;
+    border: 3px solid rgb(37, 0, 117);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+    box-shadow: none;
+}
+
+.btn-vider, .btn-maj {
+    background-color: white;
+    color: rgb(37, 0, 117);
+    border: 3px solid rgb(37, 0, 117);
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+    box-shadow: none;
+}
+
+.btn-continuer:hover {
+    /* background-color: #e68a30; removed */
+}
+
+.btn-vider:hover, .btn-maj:hover {
+    /* background-color: rgb(181, 220, 255); removed */
+}
+
+.btn-continuer:active, .btn-vider:active, .btn-maj:active {
+    /* transform: scale(0.98); removed */
+    box-shadow: none;
+}
+
+/* Codes Promo et Cartes Cadeaux */
+.codes-container {
+    display: flex;
+    gap: 20px;
+}
+
+.bloc-code {
+    flex: 1;
+    border: 3px solid rgb(37, 0, 117);
+    border-radius: 3px;
+    padding: 15px;
+    background-color: white;
+}
+
+.bloc-code h3 {
+    margin-top: 0;
+    font-size: 16px;
+    border-bottom: 2px solid #FF9F43;
+    padding-bottom: 5px;
+    color: rgb(37, 0, 117);
+    margin-bottom: 15px;
+}
+
+.input-group {
+    display: flex;
+    gap: 5px;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 8px;
+    border: 2px solid rgb(37, 0, 117);
+    border-radius: 3px;
+}
+
+.input-group button {
+    background-color: rgb(37, 0, 117);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: none;
+}
+
+.input-group button:hover {
+    /* background-color: rgb(54, 0, 99); removed */
+}
+
+/* --- Résumé (Droite) --- */
+.resume-box {
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.resume-box h2 {
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid #FF9F43;
+    display: block;
+    padding: 5px 15px;
+    margin: 0 auto 20px auto;
+    width: fit-content;
+    background-color: transparent;
+    font-size: 18px;
+    color: rgb(37, 0, 117);
+}
+
+.estimation-frais, .choix-livraison, .taxes-info {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+.estimation-frais h3, .choix-livraison h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: rgb(37, 0, 117);
+}
+
+.estimation-frais label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.estimation-frais select, .estimation-frais input {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid rgb(37, 0, 117);
+    margin-top: 5px;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.option-livraison {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.taxes-info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.total-final {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: rgb(37, 0, 117);
+    color: white;
+    border-radius: 5px;
+}
+
+.btn-payer {
+    width: 100%;
+    background-color: #FF9F43;
+    color: black;
+    border: none;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: none;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+.btn-payer:hover {
+    /* background-color: #e68a30; removed */
+}
+
+.btn-payer:active {
+    /* transform: scale(0.98); removed */
+    box-shadow: none;
+}
+
+/* --- Résumé --- */
+.resume-quasar {
+    padding: 10px 25px;
+    background-color: #f5f5f5;
+    font-size: 16px;
+    color: rgb(37, 0, 117);
+    text-align: center;
+    font-weight: 400;
+    margin: 40px 0;
+}
+.resume-quasar h2 {
+    text-align: center;
+    max-width: 800px;
+    margin: 5px auto;
+    color: rgb(37, 0, 117);
+}
+.resume-quasar p {
+    text-align: justify;
+    color: black;
+    max-width: 800px;
+    margin: 5px auto;
+}
+
+/* --- Pied de page (Footer) --- */
+.fin-page {
+    display: flex;            
+    justify-content: space-around; 
+    align-items: flex-start;   
+    padding: 30px 25px;      
+    background-color: rgb(37, 0, 117);
+    color: white;
+}
+
+.colonne-footer {
+    display: flex;             
+    flex-direction: column;    
+    gap: 5px;                
+    width: 200px;          
+}
+
+.colonne-footer h3 {
+    margin-top: 0;           
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: white;
+    border-bottom: 2px solid white; 
+    padding-bottom: 5px;
+    display: inline-block;
+    width: fit-content;
+}
+
+.lien-fin {
+    text-decoration: none;     
+    color: white;             
+    font-size: 14px;
+}
+
+.copyright {
+    text-align: center;       
+    background-color: rgb(20, 0, 60);
+    color: white;             
+    padding: 10px;
+    font-size: 12px;
+    margin: 0;                 
+}
+
+.copyright p {
+    margin: 0;           
+}
+
+/* --- Dimensions des images --- */
+.logo img {height: 100px; width: auto; display: block;}
+.recherche img {height: 40px; width: auto;}
+.boutons-user img {height: 50px; width: auto;}

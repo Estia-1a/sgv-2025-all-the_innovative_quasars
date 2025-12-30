@@ -1,29 +1,36 @@
-/*Code pour la Page 1 Home W3C OKAY :)*/
+/* ==========================================================================
+   FEUILLE DE STYLE DESKTOP - PAGE D'ACCUEIL
+   Ce fichier gère l'affichage pour les écrans larges (ordinateurs)
+   ========================================================================== */
 
-/* 1. Barre annonce du moment */
+/* --- Configuration globale --- */
+
+/* Applique la police Segoe UI à tous les éléments */
+* {
+    font-family: 'Segoe UI', sans-serif !important;
+}
+
+/* --- Barre d'annonce supérieure --- */
 .top-bar {
-    background-color: rgb(254, 247, 38);
+    background-color: rgb(254, 247, 38); /* Jaune vif pour attirer l'attention */
     color: black;
     text-align: center;
     padding: 5px;
     font-size: medium;
     font-weight: bold;
-    font-family: "Segoe UI", sans-serif;
 }
 
-* {
-    font-family: 'Segoe UI', sans-serif !important;
-}
-
+/* --- Titres --- */
 h1 {
     text-align: center;
     font-style: italic;
-    color: rgb(37, 0, 117);
+    color: rgb(37, 0, 117); /* Bleu foncé charte graphique */
     margin: 5px 0 2px 0;
     font-size: 18px;
 }
 
-/* Cacher le menu burger sur desktop */
+/* --- Éléments masqués sur Desktop --- */
+/* Le menu burger et son bouton sont cachés car on affiche le menu complet */
 #menu-toggle {
     display: none;
 }
@@ -32,30 +39,24 @@ h1 {
     display: none;
 }
 
-/*Barre principale en haut, header*/
+/* --- En-tête principal (Header) --- */
 .header-main {
-    display: flex; /* aligne à l'horizontale les éléments de la div */
-    justify-content: space-between; /* ecarte les éléments aux extrémités */
-    align-items: center; /* aligne en verticale */
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 60px;
-    padding-right: 60px;
-    background-color:white;
+    display: flex; /* Utilisation de Flexbox pour l'alignement */
+    justify-content: space-between; /* Espacement égal entre les éléments */
+    align-items: center; /* Alignement vertical centré */
+    padding: 10px 60px; /* Padding haut/bas et gauche/droite */
+    background-color: white;
 }
 
-/*barre de recherche*/ 
+/* --- Barre de recherche --- */
 .recherche {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 10px; /* Espace entre les éléments internes */
     background-color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border: 5px solid rgb(37, 0, 117);
-    border-radius: 20px;
+    padding: 10px 15px;
+    border: 5px solid rgb(37, 0, 117); /* Bordure épaisse bleue */
+    border-radius: 20px; /* Bords arrondis */
 }
 
 .recherche form {
@@ -65,46 +66,43 @@ h1 {
     width: 100%;
 }
 
-/*barre de recherche avec icone*/ 
 .recherche input {
     border: none;      
-    outline: none; /*enleve le trait bleu du link*/
-    padding-top: 5px;
-    padding-bottom: 5px;
+    outline: none; /* Supprime le contour bleu par défaut au clic */
+    padding: 5px 0;
     font-size: 20px;
-    width: 500px;
+    width: 500px; /* Largeur fixe pour la barre de recherche */
     background: transparent;
 }
 
 .recherche button {
     background: transparent;
     border: none;
-    cursor: pointer;
+    cursor: pointer; /* Curseur main au survol */
     padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/*Code pour la partie header, logo et boutons user*/
-/*Boutons users*/
+/* --- Zone Utilisateur (Compte / Panier) --- */
 .boutons-user {
     display: flex;        
     align-items: center;   
     gap: 30px;             
 }
 
-/* Le style de chaque lien (Le texte + l'icône) */
 .boutons-user a {
     display: flex;         
     align-items: center;   
     gap: 12px;           
-    text-decoration: none; 
+    text-decoration: none; /* Supprime le soulignement */
     color: black;          
     font-weight: 600;      
     font-size: 16px;       
 }
 
+/* --- Barre d'outils et Navigation --- */
 .barre-outils {
     display: flex;             
     justify-content: space-between; 
@@ -113,11 +111,11 @@ h1 {
     background-color: white;    
 }
 
-/*Menu navigation*/
+/* Menu de navigation principal */
 .menu-principal {
     display: flex;            
-    justify-content:flex-start;
-    flex-wrap: wrap; 
+    justify-content: flex-start;
+    flex-wrap: wrap; /* Permet le retour à la ligne si nécessaire */
     font-weight: 600;      
     font-size: 16px; 
     gap: 0px;             
@@ -129,12 +127,9 @@ h1 {
 
 .menu-principal a {
     display: inline-block;
-    padding-top : 8px; 
-	padding-bottom :8px;        
-	padding-left: 10px;
-	padding-right: 10px;
-    border-radius:0px;
-    background-color:rgb(181, 220, 255);
+    padding: 8px 10px;
+    border-radius: 0px;
+    background-color: rgb(181, 220, 255); /* Bleu clair */
     border: none;
     text-decoration: none;
     color: rgb(0, 0, 0);
@@ -143,11 +138,11 @@ h1 {
     cursor: pointer;
 }
 
-/* Boutons filtres */
+/* --- Boutons Filtres --- */
 .btn-filtre1 {
     text-decoration: none;
     padding: 8px 20px;
-    background-color: #FF9F43;
+    background-color: #FF9F43; /* Orange */
     color: rgb(0, 0, 0);
     border: 3px solid rgb(37, 0, 117);
     border-radius: 3px;
@@ -159,7 +154,7 @@ h1 {
 .btn-filtre2 {
     text-decoration: none;
     padding: 8px 20px;
-    background-color: rgb(37, 0, 117);
+    background-color: rgb(37, 0, 117); /* Bleu foncé */
     color: white;
     font-weight: bold;
     border: 3px solid rgb(37, 0, 117);
@@ -168,25 +163,21 @@ h1 {
     cursor: pointer;
 }
 
-
-/*Code CSS du bloc principal*/
+/* --- Mise en page principale (Layout) --- */
 .bloc-principal {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding-top: 15px;
-    padding-bottom: 30px;
-    padding-left: 25px; 
-    padding-right: 25px;
-    background-color:white;
+    padding: 15px 25px 30px 25px;
+    background-color: white;
     gap: 40px; 
 }
 
-/*Partie ventes*/
+/* --- Section Meilleures Ventes --- */
 .meilleures-ventes { 
-    width: 63%;
+    width: 63%; /* Occupe environ 2/3 de la largeur */
     background-color: white;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); /* Ombre portée douce */
     padding: 10px;
     border-radius: 10px;
 }
@@ -229,7 +220,6 @@ h1 {
     font-style: italic;
 }
 
-
 /* Bouton découvrir */
 .decouvrir {
     display: block; 
@@ -242,20 +232,19 @@ h1 {
     color: black;
     font-weight: bold;
     border: none;
-    border-radius:10px;
+    border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
 }
 
-
-/* Actualités */
+/* --- Section Actualités --- */
 .actualites {
-    width: 30%;
+    width: 30%; /* Occupe environ 1/3 de la largeur */
     background-color: aliceblue;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
     padding: 10px;           
     border-radius: 10px;
-    border: 2px dashed #FF9F43;
+    border: 2px dashed #FF9F43; /* Bordure en pointillés orange */
     height: fit-content; 
 }
 
@@ -281,7 +270,7 @@ h1 {
     font-size: 16px;
     color: rgb(33, 25, 255);
     text-align: left;
-    margin: 0 0 0 0;
+    margin: 0;
 }
 
 .news a {
@@ -305,21 +294,16 @@ h1 {
     font-style: italic;       
 }
 
-
+/* --- Bloc Secondaire (Sections visitées & Promos) --- */
 .bloc-secondaire {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 25px; 
-    padding-right: 25px;   
+    padding: 30px 25px;
     background-color: aliceblue;
     gap: 40px;
 }
 
-
-/*Sections visitées*/
 .sections-visitees {
     width: 63%;
     border: none;
@@ -336,7 +320,6 @@ h1 {
     text-align: center;
 }
 
-/*3 icônes */
 .liste-icones {
     display: flex;
     justify-content: space-around; 
@@ -345,7 +328,6 @@ h1 {
     margin-bottom: 10px; 
 }
 
-/* Chaque lien */
 .lien-section {
     display: flex;
     flex-direction: column;   
@@ -361,13 +343,13 @@ h1 {
 }
 
 .lien-section p {
-    font-weight: bold;        /* Gras demandé */
+    font-weight: bold;
     color: black;
     margin: 0;
     font-size: 16px;
 }
 
-/* Promos */
+/* Promotions */
 .promotions {
     width: 30%;      
     background-color: rgb(37, 0, 117);
@@ -386,7 +368,6 @@ h1 {
     text-align: center;
 }
 
-/* Les Boutons Promos */
 .btn-promo {
     display: block;         
     background-color: rgb(254, 247, 38); 
@@ -405,19 +386,16 @@ h1 {
     margin: 0;    
 }
 
+/* --- Bloc Tertiaire (Immanquables & Petits prix) --- */
 .bloc-tertiaire {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 25px; 
-    padding-right: 25px;
-    background-color:rgba(255, 255, 255, 0.927);
+    padding: 30px 25px;
+    background-color: rgba(255, 255, 255, 0.927);
     gap: 40px;
 }
 
-/*Immanquables*/
 .immanquables {
     width: 63%;               
     text-align: center;
@@ -468,29 +446,24 @@ h1 {
 .btn-petits-prix {
     display: block;         
     text-decoration: none;
-
     background-color: #FF9F43; 
     color: black;           
     border: none;
-    
     padding: 5px;
     border-radius: 10px;     
     font-weight: bold;      
     font-size: 18px;  
     margin: 10px auto;
     width: 60%;
-
 }
 
 .btn-petits-prix p {
     margin: 0;
 }
 
+/* --- Section Résumé --- */
 .resume-quasar {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 25px; 
-    padding-right: 25px;
+    padding: 10px 25px;
     background-color: #f5f5f5;
     font-size: 16px;
     color: rgb(37, 0, 117);
@@ -511,7 +484,7 @@ h1 {
     margin: 5px auto;
 }
 
-/*Fin de page*/
+/* --- Pied de page (Footer) --- */
 .fin-page {
     display: flex;            
     justify-content: space-around; 
@@ -521,7 +494,6 @@ h1 {
     color: white;
 }
 
-/* Par colonne */
 .colonne-footer {
     display: flex;             
     flex-direction: column;    
@@ -559,7 +531,7 @@ h1 {
     margin: 0;           
 }
 
-/*Taille des images sur le site*/
+/* --- Dimensions des images --- */
 .logo img {height: 100px; width: auto; display: block;}
 .recherche img {height: 40px; width: auto;}
 .boutons-user img {height: 50px; width: auto;}

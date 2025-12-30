@@ -1,0 +1,10 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "append_styles",
+			"type": "shell",
+			"command": "echo \"/* --- Dimensions des images --- */\n.logo img {height: 100px; width: auto; display: block;}\n.recherche img {height: 40px; width: auto;}\n.boutons-user img {height: 50px; width: auto;}\" >> \"/Users/robin/Library/CloudStorage/OneDrive-Personnel/Documents/Bureautique/ESTIA/Semestre 1/Génie logiciel/REP TEMP/sgv-2025-all-the_innovative_quasars/styles/panier-desktop.css\""
+		}
+	]
+}

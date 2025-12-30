@@ -1,6 +1,10 @@
-/*Code pour la Page 1 Home W3C OKAY :)*/
+/* ==========================================================================
+   FEUILLE DE STYLE MOBILE - PAGE D'ACCUEIL
+   Ce fichier gère l'affichage pour les petits écrans (smartphones)
+   ========================================================================== */
 
-/*Header page*/
+/* --- Titres --- */
+/* Le h1 est caché visuellement mais reste accessible pour les lecteurs d'écran (SEO/Accessibilité) */
 h1 {
     position: absolute;
     width: 1px;
@@ -19,25 +23,25 @@ h2 {
     font-size: 20px;
 }
 
-/*Header*/
+/* --- En-tête principal (Header) --- */
 .header-main {
     display: flex;
-    flex-wrap: wrap;      
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne */
     align-items: center;
     padding: 5px;
     gap: 10px;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Inclut padding et border dans la largeur totale */
 }
 
+/* Réorganisation des éléments avec la propriété 'order' de Flexbox */
 .bouton-menu {
-    order: 1;
+    order: 1; /* Premier élément : le bouton burger */
     flex: 0 0 auto;
     margin-right: auto;  
 }
 
-/*Logo*/
 .logo {
-    order: 2;
+    order: 2; /* Deuxième élément : le logo centré */
     flex: 1;            
     text-align: center;   
 }
@@ -47,9 +51,8 @@ h2 {
     width: auto;
 }
 
-/*Boutons user*/
 .boutons-user {
-    order: 3;             
+    order: 3; /* Troisième élément : les boutons utilisateur */
     width: 100%;         
     display: flex;      
     justify-content: space-around;
@@ -77,18 +80,20 @@ h2 {
     margin-left: 10px;
 }
 
-/*Recherche*/
+/* --- Barre de recherche --- */
 .recherche {
-    order: 4;              /* Tout en bas */
+    order: 4; /* Dernier élément : la barre de recherche */
     width: 100%;
     margin-top: 0;
 }
 
-/*faire disparaitre le symbole*/
+/* --- Menu Burger --- */
+/* La case à cocher est cachée, elle sert juste à stocker l'état ouvert/fermé */
 #menu-toggle {
     display: none;
 }
 
+/* Le bouton visible (les 3 barres) */
 .bouton-menu {
     display: block;
     font-size: 35px;
@@ -97,29 +102,29 @@ h2 {
     margin-right: 15px;
 }
 
-/*cache le menu*/
+/* Le menu est caché par défaut */
 .barre-outils {
     display: none;
     box-sizing: border-box;
 }
 
-/*Si la case est cochée, on affiche la barre outils */
+/* Mécanisme CSS pur pour afficher le menu quand la case est cochée */
 #menu-toggle:checked ~ .barre-outils {
     display: flex; 
     flex-direction: column; 
     width: 100%;
 }
 
-/* Style des liens*/
+/* Style des liens du menu mobile */
 .menu-principal {
-    flex-direction: column;
+    flex-direction: column; /* Les liens s'empilent verticalement */
     width: 100%;
 }
 
 .menu-principal a {
     display: block;
     padding: 10px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #eee; /* Séparateur fin */
     width: 100%;
     box-sizing: border-box; 
 }
@@ -148,7 +153,7 @@ h2 {
     box-sizing: border-box;
 }
 
-/*Filtres*/
+/* --- Filtres --- */
 .filtres {
     display: flex;       
     width: 100%;         
@@ -167,14 +172,15 @@ h2 {
     white-space: nowrap; 
 }
 
-/*Body du site*/
+/* --- Mise en page principale (Layout) --- */
 .bloc-principal {
-    flex-direction: column; /*affiche les ventes au dessus d'actualités*/
+    flex-direction: column; /* Empilement vertical des sections */
     padding: 10px;          
     gap: 5px;
     margin-top: 0;
 }
 
+/* --- Section Meilleures Ventes (Carrousel) --- */
 .meilleures-ventes {
     width: 100%;
     background-color: #f5f5f5;
@@ -187,11 +193,11 @@ h2 {
 
 .actualites {width: 100%; box-shadow: none;}
 
-/*Effet carrousel*/
+/* Effet de défilement horizontal (scroll) pour les produits */
 .affiches-ventes {
     display: flex;          
-    flex-wrap: nowrap;      
-    overflow-x: auto;       /*SCROLL horizontal*/
+    flex-wrap: nowrap; /* Empêche le retour à la ligne */
+    overflow-x: auto; /* Active le scroll horizontal */
     gap: 20px;              /* espace entrelivres*/
     padding-bottom: 25px;   /*barre de défilement*/
     margin: 0 -5px;
@@ -200,7 +206,7 @@ h2 {
 }
 
 .produit {
-    min-width: 180px;
+    min-width: 180px; /* Largeur minimale pour chaque produit */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -231,7 +237,7 @@ h2 {
     margin: 10px 0;
 }
 
-/*Actualités*/
+/* --- Section Actualités --- */
 .actualites {
     width: 100%;          
     box-sizing: border-box; 
@@ -273,7 +279,7 @@ h2 {
     padding: 5px 0;  
 }
 
-/*Bloc secondaire*/
+/* --- Bloc Secondaire --- */
 .bloc-secondaire {
     flex-direction: column;  
     padding: 10px;        
@@ -330,7 +336,7 @@ h2 {
     margin-right: auto;
 }
 
-/*Bloc tertiaire */
+/* --- Bloc Tertiaire --- */
 .bloc-tertiaire {
     flex-direction: column;    /* On empile tout verticalement */
     padding: 10px;        /* On réduit les marges */
@@ -382,7 +388,7 @@ h2 {
     margin: 10px auto;      
 }
 
-/*Resume*/
+/* --- Résumé --- */
 .resume-quasar {
     padding: 20px 30px;    
     margin: 10px 0;    
