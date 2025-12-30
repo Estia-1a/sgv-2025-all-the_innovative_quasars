@@ -1,2 +1,389 @@
-<!--Code pour la Page 2 de commande et paiement-->
+<!DOCTYPE html>
+<html lang="fr">
 
+<head>
+    <!-- Encodage des caractères -->
+    <meta charset="UTF-8">
+    <!-- Configuration responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Description SEO spécifique à la page panier -->
+    <meta name="description" content="Votre panier Quasar de Poche. Finalisez votre commande de livres d'astronomie et d'astrophysique.">
+    <title>Mon Panier - Quasar de Poche</title>
+    <!-- Feuilles de style spécifiques au panier -->
+    <link rel="stylesheet" href="styles/panier-desktop.css"> 
+    <link rel="stylesheet" href="styles/panier-mobile.css" media="screen and (max-width: 768px)">
+</head>
+	
+<body>
+
+<header>
+
+<!-- Checkbox pour le menu mobile -->
+<input type="checkbox" id="menu-toggle" role="button" aria-controls="menu-principal" aria-pressed="true">
+
+<!-- Barre d'information -->
+<div class="top-bar">
+	    Livraison offerte dès 20€ d'achats ! 
+</div> 
+
+<div class="header-main">
+
+    <!-- Bouton burger -->
+<label for="menu-toggle" class="bouton-menu">☰</label>
+
+<!-- Logo -->
+<div class="logo"> 
+    <a href="index.html" class="logo" aria-label="Retour à l'accueil">  
+    <img src="media/logoHOME.png" alt="Logo Quasar de Poche">
+    </a>
+</div>
+    
+    <!-- Barre de recherche -->
+    <div class="recherche"> 
+        <form action="index.html" method="get" role="search">
+        <input type="text" placeholder="Rechercher..." aria-label="Recherche">
+            
+		<button type="submit">
+        <img src="media/loupe.png" alt="Lancer la recherche">
+        </button>
+		</form>
+    </div>
+
+    <!-- Boutons utilisateur -->
+    <div class="boutons-user"> 
+            <a href="index.html">
+			Mon compte
+            <img src="media/moncompte.png" alt="Icône utilisateur sur mon compte"> 
+			</a> 
+            <a href="panier.html">
+			Mon panier
+            <img src="media/monpanier.png" alt="Icône panier sur mon compte">
+			</a> 
+    </div>
+</div>
+
+<div class="barre-outils">
+<!-- Menu principal -->
+<nav class="menu-principal" id="menu-principal">
+            <a href="index.html">Accueil</a>
+            <a href="index.html">L'Univers</a>
+            <a href="index.html">Système Solaire</a>
+            <a href="index.html">Étoiles</a>
+            <a href="index.html">Planètes</a>
+            <a href="index.html">Observation</a>
+            <a href="index.html">Jeunesse</a>
+            <a href="index.html">Idées Cadeaux</a>
+</nav>
+<!-- Filtres -->
+<div class="filtres">
+        <a href="index.html" class="btn-filtre1">Tout voir</a>
+        <a href="index.html" class="btn-filtre2">E-Books</a>
+        <a href="index.html" class="btn-filtre2">Format papier</a>
+    </div>
+
+</div>
+</header>
+
+<main>
+    <div class="fil-ariane">
+        <a href="index.html">Accueil</a> &gt; <span class="page-active">Mon Panier</span>
+    </div>
+    <h1>Votre Panier</h1>
+    <div class="bloc-principal">
+        <div class="panier-layout">
+            <!-- Colonne Gauche : Détails du panier -->
+            <div class="panier-gauche">
+                <!-- Section contenant le tableau du panier -->
+                <section class="panier-container">
+                    <table class="panier-table">
+                        <thead>
+                            <tr>
+                                <!-- En-têtes du tableau avec scope="col" pour l'accessibilité -->
+                                <th scope="col">Produit</th>
+                                <th scope="col">Prix</th>
+                                <th scope="col">Quantité</th>
+                                <th scope="col">Total</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Article 1 -->
+                            <tr>
+                                <td class="produit-info">
+                                    <img src="media/livre1.png" alt="Observer le ciel">
+                                    <div class="info-text">
+                                        <span class="titre-produit">Observer le ciel</span>
+                                        <span class="detail-produit">Section: Article scientifique</span>
+                                        <span class="detail-produit">Offre: version papier</span>
+                                    </div>
+                                </td>
+                                <!-- Prix unitaire avec attribut data-prix pour le JS -->
+                                <td class="prix-unitaire" data-prix="15">15,00 €</td>
+                                <td>
+                                    <!-- Input quantité avec classe pour le JS et aria-label pour l'accessibilité -->
+                                    <input type="number" class="input-quantite" value="1" min="1" aria-label="Quantité pour Observer le ciel">
+                                </td>
+                                <!-- Total de la ligne calculé par JS -->
+                                <td class="total-ligne">15,00 €</td>
+                                <td><button class="btn-supprimer" aria-label="Supprimer Observer le ciel du panier">Supprimer</button></td>
+                            </tr>
+                            <!-- Article 2 -->
+                            <tr>
+                                <td class="produit-info">
+                                    <img src="media/livre2.png" alt="Voyage au cœur des trous noirs">
+                                    <div class="info-text">
+                                        <span class="titre-produit">Voyage au cœur des trous noirs</span>
+                                        <span class="detail-produit">Section: Article scientifique</span>
+                                        <span class="detail-produit">Offre: version papier</span>
+                                    </div>
+                                </td>
+                                <td class="prix-unitaire" data-prix="22">22,00 €</td>
+                                <td>
+                                    <input type="number" class="input-quantite" value="1" min="1" aria-label="Quantité pour Voyage au cœur des trous noirs">
+                                </td>
+                                <td class="total-ligne">22,00 €</td>
+                                <td><button class="btn-supprimer" aria-label="Supprimer Voyage au cœur des trous noirs du panier">Supprimer</button></td>
+                            </tr>
+                            <!-- Article 3 -->
+                            <tr>
+                                <td class="produit-info">
+                                    <img src="media/livre3.png" alt="Dis, pourquoi les étoiles brillent ?">
+                                    <div class="info-text">
+                                        <span class="titre-produit">Dis, pourquoi les étoiles brillent ?</span>
+                                        <span class="detail-produit">Section: Article scientifique</span>
+                                        <span class="detail-produit">Offre: version papier</span>
+                                    </div>
+                                </td>
+                                <td class="prix-unitaire" data-prix="12.50">12,50 €</td>
+                                <td>
+                                    <input type="number" class="input-quantite" value="1" min="1" aria-label="Quantité pour Dis, pourquoi les étoiles brillent ?">
+                                </td>
+                                <td class="total-ligne">12,50 €</td>
+                                <td><button class="btn-supprimer" aria-label="Supprimer Dis, pourquoi les étoiles brillent ? du panier">Supprimer</button></td>
+                            </tr>
+                            <!-- Article 4 -->
+                            <tr>
+                                <td class="produit-info">
+                                    <img src="media/livre4.png" alt="Exoplanètes">
+                                    <div class="info-text">
+                                        <span class="titre-produit">Exoplanètes</span>
+                                        <span class="detail-produit">Section: Article scientifique</span>
+                                        <span class="detail-produit">Offre: version papier</span>
+                                    </div>
+                                </td>
+                                <td class="prix-unitaire" data-prix="18">18,00 €</td>
+                                <td>
+                                    <input type="number" class="input-quantite" value="1" min="1" aria-label="Quantité pour Exoplanètes">
+                                </td>
+                                <td class="total-ligne">18,00 €</td>
+                                <td><button class="btn-supprimer" aria-label="Supprimer Exoplanètes du panier">Supprimer</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <!-- Boutons d'action panier -->
+                <div class="actions-panier">
+                    <a href="index.html" class="btn-continuer">Continuer mes achats</a>
+                    <div class="actions-droite">
+                        <button class="btn-vider">Vider le panier</button>
+                        <button class="btn-maj">Mettre à jour le panier</button>
+                    </div>
+                </div>
+
+                <!-- Codes promo et cartes cadeaux -->
+                <div class="codes-container">
+                    <div class="bloc-code">
+                        <h3>J'ai un code réduction</h3>
+                        <div class="input-group">
+                            <input type="text" placeholder="Entrer le code réduction" aria-label="Code réduction">
+                            <button>Valider</button>
+                        </div>
+                    </div>
+                    <div class="bloc-code">
+                        <h3>J'utilise une carte cadeau</h3>
+                        <div class="input-group">
+                            <input type="text" placeholder="Entrer le code cadeau" aria-label="Code cadeau">
+                            <button>Ajouter</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Colonne Droite : Résumé -->
+            <div class="panier-droite">
+                <div class="resume-box">
+                    <h2>Résumé</h2>
+                    
+                    <div class="estimation-frais">
+                        <h3>Frais de port et taxes estimés</h3>
+                        <p>Choisissez votre destination pour estimer les frais de port.</p>
+                        
+                        <label for="pays">Pays :</label>
+                        <select id="pays">
+                            <option value="fr">France</option>
+                            <option value="be">Belgique</option>
+                            <option value="ch">Suisse</option>
+                        </select>
+
+                        <label for="cp">Code postal :</label>
+                        <input type="text" id="cp" placeholder="Saisir le code postal" aria-label="Code postal">
+                    </div>
+
+                    <div class="choix-livraison">
+                        <h3>Choix de livraison</h3>
+                        <div class="option-livraison">
+                            <input type="radio" id="pickup" name="livraison" value="3.00">
+                            <label for="pickup">Chronopost - Livraison en relais Pickup 3,00 €</label>
+                        </div>
+                        <div class="option-livraison">
+                            <input type="radio" id="colissimo-dom" name="livraison" value="3.99">
+                            <label for="colissimo-dom">Colissimo - Domicile sans signature 3,99 €</label>
+                        </div>
+                        <div class="option-livraison">
+                            <input type="radio" id="colissimo-retrait" name="livraison" value="4.29">
+                            <label for="colissimo-retrait">Colissimo - Point de retrait 4,29 €</label>
+                        </div>
+                        <div class="option-livraison">
+                            <input type="radio" id="chrono-express" name="livraison" value="8.99">
+                            <label for="chrono-express">Chronopost - Livraison express à domicile avant 13h (avec signature) 8,99 €</label>
+                        </div>
+                    </div>
+
+                    <div class="taxes-info">
+                        <p>Taxes</p>
+                        <p>TVA (5.5%)</p>
+                        <p>TVA Livraison (20%)</p>
+                    </div>
+
+                    <div class="total-final">
+                        <span>PRIX TOTAL</span>
+                        <span id="total-commande-final">67,50 €</span>
+                    </div>
+
+                    <button class="btn-payer">PAYER</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Pied de page -->
+<footer> 
+
+    <div class="resume-quasar">
+        <h2>Qui sommes-nous ?</h2>
+        <p>Né en 2021 de la passion commune de deux jeunes diplômés en physique, Quasar de Poche a une mission simple : mettre l'univers à la portée de tous. Convaincus que l'astrophysique doit émerveiller aussi bien les petits curieux que les grands rêveurs, nous avons sélectionné pour vous les meilleurs ouvrages, numériques et papiers. Considérez cette boutique comme votre rampe de lancement : vous trouverez ici toutes les clés pour réussir votre propre quête des étoiles.</p>
+    </div>
+
+    <div class="fin-page">
+
+        <div class="colonne-footer">
+			<h3>À propos</h3>
+            <a href="index.html" class="lien-fin">Nos engagements</a>
+            <a href="index.html" class="lien-fin">Notre charte qualité</a>
+        </div>
+        
+        <div class="colonne-footer">
+            <h3>Services</h3>
+            <a href="index.html" class="lien-fin">FAQ</a>
+            <a href="index.html" class="lien-fin">Nous contacter</a>
+            <a href="index.html" class="lien-fin">Service Clients</a>
+            <a href="index.html" class="lien-fin">Livraison</a>
+        </div>
+        
+        <div class="colonne-footer">
+            <h3>Conditions</h3>
+            <a href="index.html" class="lien-fin">Mentions légales</a>
+            <a href="index.html" class="lien-fin">CGV</a>
+            <a href="index.html" class="lien-fin">Confidentialité</a>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright 2025 Quasar de Poche</p>
+    </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const btnMaj = document.querySelector('.btn-maj');
+    const btnVider = document.querySelector('.btn-vider');
+    const inputsQuantite = document.querySelectorAll('.input-quantite');
+    const radiosLivraison = document.querySelectorAll('input[name="livraison"]');
+    const totalFinalElement = document.getElementById('total-commande-final');
+    const boutonsSupprimer = document.querySelectorAll('.btn-supprimer');
+
+    function calculerTotal() {
+        let sousTotal = 0;
+
+        // 1. Calculer le sous-total des articles
+        inputsQuantite.forEach(input => {
+            const row = input.closest('tr');
+            const prixUnitaire = parseFloat(row.querySelector('.prix-unitaire').dataset.prix);
+            const quantite = parseInt(input.value) || 0;
+            const totalLigne = prixUnitaire * quantite;
+            
+            // Mise à jour visuelle de la ligne
+            row.querySelector('.total-ligne').textContent = totalLigne.toFixed(2).replace('.', ',') + ' €';
+            
+            sousTotal += totalLigne;
+        });
+
+        // 2. Ajouter les frais de livraison
+        let fraisLivraison = 0;
+        const livraisonSelectionnee = document.querySelector('input[name="livraison"]:checked');
+        if (livraisonSelectionnee) {
+            fraisLivraison = parseFloat(livraisonSelectionnee.value);
+        }
+
+        // 3. Calculer les taxes
+        // TVA 5.5% sur les livres (sous-total)
+        const taxeLivres = sousTotal * 0.055;
+        // TVA 20% sur la livraison
+        const taxeLivraison = fraisLivraison * 0.20;
+
+        // 4. Total final (Sous-total + Livraison + Taxes)
+        const totalFinal = sousTotal + fraisLivraison + taxeLivres + taxeLivraison;
+        totalFinalElement.textContent = totalFinal.toFixed(2).replace('.', ',') + ' €';
+    }
+
+    // Écouteur sur le bouton "Mettre à jour"
+    if (btnMaj) {
+        btnMaj.addEventListener('click', (e) => {
+            e.preventDefault(); // Empêcher le comportement par défaut si c'était un lien
+            calculerTotal();
+        });
+    }
+
+    // Écouteur sur le bouton "Vider le panier"
+    if (btnVider) {
+        btnVider.addEventListener('click', (e) => {
+            e.preventDefault();
+            inputsQuantite.forEach(input => {
+                input.value = 0;
+            });
+        });
+    }
+
+    // Gestion des boutons supprimer
+    boutonsSupprimer.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const row = btn.closest('tr'); // Trouver la ligne correspondante
+            const input = row.querySelector('.input-quantite');
+            if (input) {
+                // Mettre la quantité à 0
+                input.value = 0;
+                // Le recalcul se fera uniquement au clic sur "Mettre à jour"
+            }
+        });
+    });
+
+    // Calcul initial au chargement
+    calculerTotal();
+});
+</script>
+
+</body>
+
+</html>
