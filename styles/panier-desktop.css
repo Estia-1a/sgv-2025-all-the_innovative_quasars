@@ -272,15 +272,6 @@ h1 {
     box-shadow: none;
 }
 
-.btn-supprimer:hover {
-    /* background-color: rgb(37, 0, 117); removed */
-    /* color: white; removed */
-}
-
-.btn-supprimer:active {
-    /* transform: scale(0.98); removed */
-}
-
 /* Actions Panier (Boutons sous le tableau) */
 .actions-panier {
     display: flex;
@@ -321,16 +312,7 @@ h1 {
     box-shadow: none;
 }
 
-.btn-continuer:hover {
-    /* background-color: #e68a30; removed */
-}
-
-.btn-vider:hover, .btn-maj:hover {
-    /* background-color: rgb(181, 220, 255); removed */
-}
-
 .btn-continuer:active, .btn-vider:active, .btn-maj:active {
-    /* transform: scale(0.98); removed */
     box-shadow: none;
 }
 
@@ -378,10 +360,6 @@ h1 {
     cursor: pointer;
     border-radius: 3px;
     box-shadow: none;
-}
-
-.input-group button:hover {
-    /* background-color: rgb(54, 0, 99); removed */
 }
 
 /* --- Résumé (Droite) --- */
@@ -472,15 +450,6 @@ h1 {
     box-shadow: none;
     text-transform: uppercase;
     border-radius: 10px;
-}
-
-.btn-payer:hover {
-    /* background-color: #e68a30; removed */
-}
-
-.btn-payer:active {
-    /* transform: scale(0.98); removed */
-    box-shadow: none;
 }
 
 /* --- Résumé --- */
